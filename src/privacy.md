@@ -77,4 +77,4 @@ We may update this policy as the app evolves. Significant changes will be noted 
 
 ## Contact
 
-If you have questions about this privacy policy, please contact us at [support@languageden.app](mailto:support@languageden.app).
+If you have questions about this privacy policy, please contact us at [hey@languageden.com](mailto:hey@languageden.com).

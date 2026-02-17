@@ -5,7 +5,7 @@ title: Support
 
 Need help with LanguageDen? You're in the right place.
 
-**Email:** [support@languageden.app](mailto:support@languageden.app)
+**Email:** [hey@languageden.com](mailto:hey@languageden.com)
 
 We aim to respond within 1–2 business days.
 
@@ -77,4 +77,4 @@ LanguageDen uses [FSRS](https://github.com/open-spaced-repetition/fsrs4anki) (Fr
 
 ## Contact
 
-If your question isn't answered above, email us at [support@languageden.app](mailto:support@languageden.app).
+If your question isn't answered above, email us at [hey@languageden.com](mailto:hey@languageden.com).

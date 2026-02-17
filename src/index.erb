@@ -3,57 +3,142 @@ layout: default
 title: LanguageDen - The Vocabulary App Built for Language Learners
 ---
 
+<% cta_button = capture do %>
+  <% if site.metadata.app_store_url && !site.metadata.app_store_url.empty? %>
+  <a href="<%= site.metadata.app_store_url %>" class="btn-primary">Download Free on the App Store</a>
+  <% else %>
+  <span class="btn-primary btn-coming-soon">Coming Soon to the App Store</span>
+  <% end %>
+<% end %>
+
 <main>
   <!-- Hero -->
   <section class="hero">
     <div class="hero-container">
       <div class="hero-badge">Free on iOS</div>
-      <h1 class="hero-headline">The vocabulary app that<br><span class="gradient-text">actually understands language</span></h1>
-      <p class="hero-sub">LanguageDen is built from the ground up for language learners. Not a generic flashcard app. Not a game disguised as learning. A real tool for people serious about building vocabulary in any language.</p>
+      <h1 class="hero-headline">Stop forgetting vocabulary.<br><span class="gradient-text">Start remembering it.</span></h1>
+      <p class="hero-sub">LanguageDen is the only vocabulary app built from the ground up for language learners. Spaced repetition that actually works. Flashcards that understand how languages work. And it's completely free.</p>
       <div class="hero-actions">
-        <% if site.metadata.app_store_url && !site.metadata.app_store_url.empty? %>
-        <a href="<%= site.metadata.app_store_url %>" class="btn-primary">Download on the App Store</a>
-        <% else %>
-        <span class="btn-primary btn-coming-soon">Coming Soon to the App Store</span>
-        <% end %>
+        <%= cta_button %>
       </div>
-      <p class="hero-footnote">Free &middot; No account required &middot; No ads, no tracking</p>
+      <p class="hero-footnote">Free forever. No account required. No ads. No tracking. No catch.</p>
     </div>
   </section>
 
-  <!-- Problem -->
+  <!-- Open with pain -->
   <section class="longform-section">
-    <div class="longform-container">
-      <h2 class="longform-heading">You already know the tools out there aren't built for you</h2>
-      <div class="problem-grid">
-        <div class="problem-card">
-          <h3>Duolingo</h3>
-          <p>Great for absolute beginners. But once you move past "the cat is on the table," you hit a wall. You can't learn <em>your</em> words. You can't study <em>your</em> material. And the gamification starts to feel more like a distraction than a feature. You're not learning a language. You're maintaining a streak.</p>
-        </div>
-        <div class="problem-card">
-          <h3>Anki</h3>
-          <p>Powerful. Incredibly powerful. But it's a generic flashcard app that happens to be used for languages. The interface feels like it was built in 2006, because it was. Creating good cards is tedious. You have to understand card templates, note types, and deck configuration just to get started. And on iOS? The official app is a paid download for an experience that still feels dated.</p>
-        </div>
-        <div class="problem-card">
-          <h3>Quizlet</h3>
-          <p>Simple and easy to use. But there's no spaced repetition, the one thing that actually makes vocabulary stick long-term. You study, you feel good, and then you forget everything two weeks later. It's a tool for cramming, not for learning.</p>
-        </div>
+    <div class="longform-container longform-container--narrow">
+      <h2 class="longform-heading">Let's be honest. You've tried other apps. They didn't work.</h2>
+      <p class="longform-body">You downloaded Duolingo. You kept the streak going for a while. But then you realized you were spending 20 minutes a day matching pictures to words you already knew. You weren't learning. You were playing a game.</p>
+      <p class="longform-body">Maybe you tried Anki. People on Reddit swear by it. So you downloaded it, opened it up, and... stared at a screen that looks like it was designed in 2006. Because it was. You tried to make a card. Then you had to learn about "note types" and "card templates" and "deck options." You just wanted to learn some vocabulary.</p>
+      <p class="longform-body">Or maybe Quizlet. Clean interface. Easy to use. You made some flashcards, studied them, felt great. Two weeks later? Gone. All of it. Because Quizlet has no spaced repetition. It's a tool for cramming before an exam, not for actually learning a language.</p>
+      <p class="longform-body">Sound familiar?</p>
+      <p class="longform-body"><strong>The problem isn't you. The problem is that none of these tools were built for what you're actually trying to do.</strong></p>
+    </div>
+  </section>
+
+  <!-- Agitate -->
+  <section class="longform-section longform-section--alt">
+    <div class="longform-container longform-container--narrow">
+      <h2 class="longform-heading">Think about how much time you've already wasted</h2>
+      <p class="longform-body">Hours configuring Anki decks instead of actually studying. Days maintaining a Duolingo streak that taught you nothing useful. Weeks re-learning the same words on Quizlet because they never stuck in the first place.</p>
+      <p class="longform-body">And here's the worst part: you <em>know</em> how you should be learning vocabulary. You know spaced repetition works. You know flashcards are effective. You just haven't found an app that does it right for language learning.</p>
+
+      <div class="highlight-box">
+        <p>Every day you spend fighting the wrong tools is a day you could have spent actually building your vocabulary.</p>
       </div>
     </div>
   </section>
 
-  <!-- Transition -->
+  <!-- Introduce the solution -->
   <section class="longform-section longform-section--accent">
     <div class="longform-container longform-container--narrow">
-      <h2 class="longform-heading">What if a vocabulary app actually understood what language learners need?</h2>
-      <p class="longform-body">That's why LanguageDen exists. It's not trying to be everything. It does one thing: help you learn and remember vocabulary in any language. Every feature was designed with language learning in mind. Not generic studying, not medical terminology, not bar exam prep. <strong>Language.</strong></p>
+      <h2 class="longform-heading">There's a better way. It's called LanguageDen.</h2>
+      <p class="longform-body">LanguageDen is a vocabulary app built exclusively for language learners. Not a generic flashcard tool that you have to bend into shape. Not a game that wastes your time. A focused, purpose-built app for one thing: <strong>helping you learn and remember vocabulary in any language.</strong></p>
+      <p class="longform-body">Every feature exists because language learners need it. Nothing exists because a product manager thought it would look good on a feature list.</p>
+      <div class="inline-cta">
+        <%= cta_button %>
+      </div>
+    </div>
+  </section>
+
+  <!-- What makes it different -->
+  <section class="longform-section">
+    <div class="longform-container longform-container--narrow">
+      <h2 class="longform-heading">Here's what makes LanguageDen different from everything else</h2>
+
+      <div class="sales-point">
+        <h3 class="sales-point-heading">Spaced repetition that actually works (without a manual)</h3>
+        <p class="longform-body">Spaced repetition is the single most effective technique for long-term memorization. This isn't debated. It's settled science. The problem is that most apps either don't have it (Quizlet) or make you configure it yourself (Anki).</p>
+        <p class="longform-body">LanguageDen uses FSRS, a modern algorithm that's more accurate than what Anki has used for the past 20 years. It tracks how well you know each word and schedules your reviews at the exact moment you're about to forget.</p>
+        <p class="longform-body">You don't configure anything. You don't tweak settings. You don't install add-ons. You just review your cards and the app handles everything else.</p>
+        <p class="longform-body"><strong>Result: you remember more words while spending less time studying.</strong></p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="sales-point">
+        <h3 class="sales-point-heading">Any language you can type. Seriously, any.</h3>
+        <p class="longform-body">Duolingo supports about 40 languages. Sounds like a lot until you realize yours isn't on the list. Even if it is, you're stuck with their curriculum. You can't learn your own words.</p>
+        <p class="longform-body">Anki technically supports everything, but you have to find or build all the content yourself.</p>
+        <p class="longform-body">LanguageDen works with any language you can type. Spanish, Japanese, Arabic, Korean, Swahili, Welsh, Tagalog, Uzbek, Navajo, Esperanto. It doesn't matter. There's no fixed list. If you can type it, you can learn it.</p>
+        <p class="longform-body"><strong>Learning a less common language? You get the same experience as someone learning Spanish. No compromises.</strong></p>
+        <div class="language-pills">
+          <span>Spanish</span><span>Japanese</span><span>Arabic</span><span>Korean</span>
+          <span>Mandarin</span><span>French</span><span>German</span><span>Thai</span>
+          <span>Swahili</span><span>Portuguese</span><span>Russian</span><span>Hindi</span>
+          <span>Italian</span><span>Turkish</span><span>Vietnamese</span><span>+ any other</span>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="sales-point">
+        <h3 class="sales-point-heading">Built specifically for how languages work</h3>
+        <p class="longform-body">Anki doesn't know the difference between a vocabulary card and a geography card. Quizlet doesn't either. They're generic tools.</p>
+        <p class="longform-body">LanguageDen understands that language learning has specific needs. Definitions in context. Natural example sentences. Conjugation patterns. Multiple card types so you can learn the same word from different angles.</p>
+        <p class="longform-body"><strong>This is what "built for language learners" actually means. Every feature is designed around how you learn vocabulary, not how you memorize random facts.</strong></p>
+      </div>
+
+      <div class="inline-cta">
+        <%= cta_button %>
+        <p class="inline-cta-note">Takes 30 seconds to get started. No account needed.</p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="sales-point">
+        <h3 class="sales-point-heading">Never lose a word again</h3>
+        <p class="longform-body">You're watching a show in your target language. Someone says a word you don't know. You think "I should look that up later." You never do. The word is gone forever.</p>
+        <p class="longform-body">LanguageDen's Quick Notes fix this. Hear a new word? Open the app, type it in (or record the audio), and close it. Done. Two seconds. Later, when you have time, process your notes into full flashcards with a single tap.</p>
+        <p class="longform-body"><strong>Every word you encounter becomes a word you can learn. Nothing slips through the cracks.</strong></p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="sales-point">
+        <h3 class="sales-point-heading">Images that make words stick</h3>
+        <p class="longform-body">There's a concept in cognitive science called the "picture superiority effect." Your brain remembers images dramatically better than text. It's not even close.</p>
+        <p class="longform-body">LanguageDen has built-in image search powered by Unsplash. Find a photo that captures the meaning of a word and attach it to your card. When you review, that visual anchor helps cement the word in your memory in a way that text alone never will.</p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="sales-point">
+        <h3 class="sales-point-heading">Your data. Your device. Your iCloud. That's it.</h3>
+        <p class="longform-body">Most apps want your email, your name, your usage data. They track what you study, when you study, and how you study. Then they sell that data or use it to push you toward a subscription.</p>
+        <p class="longform-body">LanguageDen doesn't do any of that.</p>
+        <p class="longform-body">There's no account to create. Your data syncs through your personal iCloud, and it never touches anyone else's servers. Start a review on your iPhone, finish it on your iPad. No ads. No tracking. No analytics SDKs.</p>
+        <p class="longform-body"><strong>Just an app that does its job and leaves you alone.</strong></p>
+      </div>
     </div>
   </section>
 
   <!-- Comparison table -->
-  <section class="longform-section">
+  <section class="longform-section longform-section--alt">
     <div class="longform-container">
-      <h2 class="longform-heading">See how LanguageDen compares</h2>
+      <h2 class="longform-heading" style="text-align: center;">Still not sure? Compare for yourself.</h2>
+      <p class="longform-body" style="text-align: center; max-width: 600px; margin: 0 auto 40px;">Here's LanguageDen side by side with the tools you've probably already tried.</p>
       <div class="comparison-table-wrapper">
         <table class="comparison-table">
           <thead>
@@ -118,146 +203,140 @@ title: LanguageDen - The Vocabulary App Built for Language Learners
           </tbody>
         </table>
       </div>
-    </div>
-  </section>
-
-  <!-- Deep dive: Spaced repetition -->
-  <section class="longform-section longform-section--alt">
-    <div class="longform-container longform-container--narrow">
-      <h2 class="longform-heading">Spaced repetition that works, without the PhD</h2>
-      <p class="longform-body">Spaced repetition is the single most effective technique for long-term memorization. It's not debated. It's not a trend. It's how memory works.</p>
-      <p class="longform-body">LanguageDen uses the FSRS algorithm, the same science behind Anki, but newer and more accurate. It tracks how well you know each word and schedules reviews at exactly the right moment: just before you'd forget.</p>
-      <p class="longform-body">The difference? You don't need to configure anything. No deck settings to tweak. No intervals to calculate. No add-ons to install. You just review your cards, and the algorithm handles the rest.</p>
-    </div>
-  </section>
-
-  <!-- Deep dive: Any language -->
-  <section class="longform-section">
-    <div class="longform-container longform-container--narrow">
-      <h2 class="longform-heading">Any language. No, really. Any language.</h2>
-      <p class="longform-body">Most language apps support 10-30 languages. Duolingo has a fixed list. Even Anki requires you to find or build decks yourself.</p>
-      <p class="longform-body">LanguageDen works with any language you can type. Spanish, Japanese, Arabic, Korean, Swahili, Welsh, Tagalog, Uzbek. It doesn't matter. Every feature works the same across all of them.</p>
-      <p class="longform-body">Learning a less common language? You're not a second-class citizen here. The experience is the same whether you're learning French or Farsi.</p>
-      <div class="language-pills">
-        <span>Spanish</span><span>Japanese</span><span>Arabic</span><span>Korean</span>
-        <span>Mandarin</span><span>French</span><span>German</span><span>Thai</span>
-        <span>Swahili</span><span>Portuguese</span><span>Russian</span><span>Hindi</span>
-        <span>Italian</span><span>Turkish</span><span>Vietnamese</span><span>+ any other</span>
+      <div class="inline-cta">
+        <%= cta_button %>
       </div>
     </div>
   </section>
 
-  <!-- Deep dive: Import -->
-  <section class="longform-section longform-section--alt">
-    <div class="longform-container longform-container--narrow">
-      <h2 class="longform-heading">Already have an Anki deck? Bring it with you.</h2>
-      <p class="longform-body">If you've spent months (or years) building an Anki deck, you don't have to start over. LanguageDen imports .apkg files directly. Your cards, your progress, brought into a modern app that's built for how you actually learn languages.</p>
-      <p class="longform-body">Prefer CSV? That works too. Or just type words manually. However you want to build your vocabulary, LanguageDen meets you where you are.</p>
-    </div>
-  </section>
-
-  <!-- Deep dive: Quick Notes -->
+  <!-- Already using Anki? -->
   <section class="longform-section">
     <div class="longform-container longform-container--narrow">
-      <h2 class="longform-heading">Hear a new word? Capture it instantly.</h2>
-      <p class="longform-body">You're watching a show in your target language. Someone says a word you don't know. By the time you open a flashcard app, find the right deck, create a card, write the definition... the moment is gone. And so is the word.</p>
-      <p class="longform-body">LanguageDen's Quick Notes let you type or record audio in seconds. Just capture the word and move on. Later, process your notes into full flashcards with a tap.</p>
-      <p class="longform-body">Nothing gets lost. Every word you encounter becomes a word you can learn.</p>
+      <h2 class="longform-heading">Already invested in Anki? You don't have to start over.</h2>
+      <p class="longform-body">If you've spent months or years building Anki decks, that work isn't wasted. LanguageDen imports .apkg files directly. Your cards come with you into a modern app that's actually designed for language learning.</p>
+      <p class="longform-body">You can also import from CSV files or add words manually. However your vocabulary lives right now, LanguageDen can work with it.</p>
+
+      <div class="highlight-box">
+        <p><strong>You keep everything you've built.</strong> You just get a better tool to learn with.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Deep dive: Visual -->
+  <!-- How fast -->
   <section class="longform-section longform-section--alt">
     <div class="longform-container longform-container--narrow">
-      <h2 class="longform-heading">A picture is worth a thousand repetitions</h2>
-      <p class="longform-body">Research consistently shows that pairing words with images dramatically improves recall. It's called the "picture superiority effect." Your brain remembers images far better than text alone.</p>
-      <p class="longform-body">LanguageDen has built-in Unsplash image search. Find a relevant photo and attach it to any card. When you review, that visual anchor helps the word stick in ways that pure text never will.</p>
-    </div>
-  </section>
-
-  <!-- iCloud -->
-  <section class="longform-section">
-    <div class="longform-container longform-container--narrow">
-      <h2 class="longform-heading">Your data stays yours</h2>
-      <p class="longform-body">No account to create. No email to hand over. No data sitting on someone else's server.</p>
-      <p class="longform-body">LanguageDen syncs through your personal iCloud. Your vocabulary, your progress, your flashcards. They all live on your device and in your iCloud account. Start a review on your iPhone, finish it on your iPad. Everything stays in sync automatically.</p>
-      <p class="longform-body">No ads. No tracking. No analytics SDKs watching what you do. Just an app that does its job and respects your privacy.</p>
-    </div>
-  </section>
-
-  <!-- How it works -->
-  <section class="longform-section longform-section--alt">
-    <div class="longform-container longform-container--narrow">
-      <h2 class="longform-heading">Get started in under a minute</h2>
+      <h2 class="longform-heading">Get started in under 60 seconds</h2>
+      <p class="longform-body" style="margin-bottom: 40px;">No sign-up forms. No onboarding wizards. No email verification. Here's the entire process:</p>
       <div class="steps">
         <div class="step">
           <div class="step-number">1</div>
           <div class="step-content">
-            <h3>Add your words</h3>
-            <p>Type a word, import an Anki deck, upload a CSV, or capture something on the go with Quick Notes. However you encounter new vocabulary, LanguageDen handles it.</p>
+            <h3>Download the app</h3>
+            <p>It's free. Open it. That's it. There's no account to create.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-number">2</div>
           <div class="step-content">
-            <h3>Build your flashcards</h3>
-            <p>Create cards with definitions, example sentences, conjugations, and images. Build them yourself or optionally let AI generate them for you.</p>
+            <h3>Add your first words</h3>
+            <p>Type a word, import an existing deck, or capture something with Quick Notes. However you want to start, start.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-number">3</div>
           <div class="step-content">
-            <h3>Review and remember</h3>
-            <p>Spaced repetition schedules each card at the perfect moment. You remember more while studying less. That's not marketing. That's how the algorithm works.</p>
+            <h3>Build your flashcards</h3>
+            <p>Add definitions, example sentences, conjugations, and images. Create them yourself, or optionally let AI do it for you.</p>
           </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Review and remember</h3>
+            <p>Spaced repetition does the rest. You just show up, review your cards, and watch your vocabulary grow.</p>
+          </div>
+        </div>
+      </div>
+      <div class="inline-cta">
+        <%= cta_button %>
+        <p class="inline-cta-note">You'll be reviewing your first cards in under a minute.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Imagine -->
+  <section class="longform-section">
+    <div class="longform-container longform-container--narrow">
+      <h2 class="longform-heading">Imagine this</h2>
+      <p class="longform-body">It's three months from now. You open LanguageDen for your morning review. It takes ten minutes. The app shows you exactly the words you need to see today. Not the ones you already know. Not random ones. The ones you're about to forget.</p>
+      <p class="longform-body">You get through the stack. Some words are easy now. They used to be hard. Some are still tricky. The app knows that and will show them to you again soon.</p>
+      <p class="longform-body">You close the app. Ten minutes. And in those ten minutes, you've reinforced hundreds of words. Words that are actually sticking this time. Words you'll remember next week, next month, next year.</p>
+      <p class="longform-body">That's not a fantasy. That's how spaced repetition works. And LanguageDen makes it effortless.</p>
+
+      <div class="highlight-box highlight-box--green">
+        <p><strong>The best time to start building your vocabulary was a year ago. The second best time is right now.</strong></p>
+      </div>
+
+      <div class="inline-cta">
+        <%= cta_button %>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objections / FAQ -->
+  <section class="longform-section longform-section--alt">
+    <div class="longform-container longform-container--narrow">
+      <h2 class="longform-heading">You might be wondering...</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>"Is it really free? What's the catch?"</h3>
+          <p>There is no catch. LanguageDen is free to download and free to use. No subscription. No paywall. No "premium" features locked behind a monthly fee. The free version will always be free.</p>
+        </div>
+        <div class="faq-item">
+          <h3>"What's FSRS? Is it better than what Anki uses?"</h3>
+          <p>FSRS (Free Spaced Repetition Scheduler) is a modern, open-source scheduling algorithm. It's more accurate than SM-2, which Anki used as its default for over 15 years. FSRS adapts to your personal memory patterns and schedules reviews more efficiently. You don't need to know any of this to use the app. It just works.</p>
+        </div>
+        <div class="faq-item">
+          <h3>"Does it have AI features?"</h3>
+          <p>Yes, as an optional extra. You can connect an OpenRouter API key to auto-generate flashcard content like definitions, example sentences, and conjugations. But the app is fully functional without it. AI is there if you want it. It's not required.</p>
+        </div>
+        <div class="faq-item">
+          <h3>"What if my language isn't supported?"</h3>
+          <p>It is. LanguageDen works with any language you can type. There's no fixed language list. If your keyboard can produce the characters, LanguageDen can teach you the words.</p>
+        </div>
+        <div class="faq-item">
+          <h3>"I have years of Anki decks. Can I bring them over?"</h3>
+          <p>Yes. LanguageDen imports .apkg files directly. You can also import from CSV. Your existing work comes with you.</p>
+        </div>
+        <div class="faq-item">
+          <h3>"Do I need to create an account?"</h3>
+          <p>No. LanguageDen uses your existing iCloud (Apple ID) for syncing. There's nothing to sign up for. Open the app and start learning.</p>
+        </div>
+        <div class="faq-item">
+          <h3>"What if I don't like it?"</h3>
+          <p>Delete it. It's free. You haven't lost anything. But give it a week of daily reviews first. That's when spaced repetition starts to click, and you'll feel the difference.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
+  <!-- Final push -->
   <section class="longform-section">
     <div class="longform-container longform-container--narrow">
-      <h2 class="longform-heading">Common questions</h2>
-      <div class="faq-list">
-        <div class="faq-item">
-          <h3>Is it really free?</h3>
-          <p>Yes. LanguageDen is free to download and free to use. No subscription, no paywall, no "premium" features locked behind a monthly fee. The free version will always be free.</p>
-        </div>
-        <div class="faq-item">
-          <h3>What is FSRS?</h3>
-          <p>FSRS (Free Spaced Repetition Scheduler) is a modern, open-source algorithm for scheduling flashcard reviews. It's more accurate than the SM-2 algorithm that Anki has used for decades. It adapts to your memory patterns and shows you cards right before you'd forget them.</p>
-        </div>
-        <div class="faq-item">
-          <h3>Does it have AI features?</h3>
-          <p>Yes, as an optional extra. You can connect an OpenRouter API key to auto-generate flashcard content like definitions, example sentences, and conjugations. But the app is fully functional without it. AI is a convenience, not a requirement.</p>
-        </div>
-        <div class="faq-item">
-          <h3>What languages are supported?</h3>
-          <p>All of them. If you can type it, LanguageDen supports it. There's no fixed language list. The app works with any writing system and any language.</p>
-        </div>
-        <div class="faq-item">
-          <h3>Can I import my Anki decks?</h3>
-          <p>Yes. LanguageDen imports .apkg files directly. You can also import vocabulary from CSV files or add words manually.</p>
-        </div>
-        <div class="faq-item">
-          <h3>Do I need to create an account?</h3>
-          <p>No. LanguageDen uses your existing iCloud account (your Apple ID) for syncing. There's no separate sign-up, no email verification, no password to remember.</p>
-        </div>
-      </div>
+      <h2 class="longform-heading">You have two choices right now</h2>
+      <p class="longform-body"><strong>Option one:</strong> Close this page. Go back to whatever app you've been using. Keep fighting with clunky interfaces, missing features, and tools that weren't built for language learning. Keep forgetting words you've studied three times already.</p>
+      <p class="longform-body"><strong>Option two:</strong> Download LanguageDen. It takes 30 seconds. Add your first words. Start a review. Feel what it's like to use a vocabulary app that was actually built for what you're trying to do.</p>
+      <p class="longform-body">It's free. There's no risk. There's no account to create. There's nothing to lose except the words you keep forgetting.</p>
     </div>
   </section>
 
   <!-- Final CTA -->
   <section class="cta">
     <div class="cta-container">
-      <h2>Stop fighting your tools.<br>Start learning vocabulary.</h2>
-      <p>Free. No account. No ads. Built for language learners.</p>
-      <% if site.metadata.app_store_url && !site.metadata.app_store_url.empty? %>
-      <a href="<%= site.metadata.app_store_url %>" class="btn-primary">Download on the App Store</a>
-      <% else %>
-      <span class="btn-primary btn-coming-soon">Coming Soon to the App Store</span>
-      <% end %>
+      <h2>Stop forgetting. Start learning.</h2>
+      <p>Free. No account. No ads. No tracking. Built for language learners.</p>
+      <%= cta_button %>
+      <p class="cta-sub">Available on iOS. Download takes seconds.</p>
     </div>
   </section>
 </main>
