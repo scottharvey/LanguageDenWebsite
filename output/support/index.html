@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Support | Language Den</title>
+
+<meta name="description" content="Language Den is a vocabulary learning app for iOS. Build your vocabulary with spaced repetition, AI-powered flashcard generation, Anki import, and iCloud sync across all your devices." />
+<meta name="author" content="Language Den" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Support | Language Den" />
+<meta property="og:description" content="Language Den is a vocabulary learning app for iOS. Build your vocabulary with spaced repetition, AI-powered flashcard generation, Anki import, and iCloud sync across all your devices." />
+<meta property="og:site_name" content="Language Den" />
+
+<link rel="stylesheet" href="/_bridgetown/static/index.OFEAHQWW.css" />
+<script src="/_bridgetown/static/index.NS2NXCKO.js" defer></script>
+<script type="module">let lastmod = 0
+let reconnectAttempts = 0
+function startLiveReload() {
+  const connection = new EventSource("/_bridgetown/live_reload")
+
+  connection.addEventListener("message", event => {
+    reconnectAttempts = 0
+    if (document.querySelector("#bridgetown-build-error")) document.querySelector("#bridgetown-build-error").close()
+    if (event.data == "reloaded!") {
+      location.reload()
+    } else {
+      const newmod = Number(event.data)
+      if (lastmod > 0 && newmod > 0 && lastmod < newmod) {
+        location.reload()
+      } else {
+        lastmod = newmod
+      }
+    }
+  })
+
+  connection.addEventListener("builderror", event => {
+    let dialog = document.querySelector("#bridgetown-build-error")
+    if (!dialog) {
+      dialog = document.createElement("dialog")
+      dialog.id = "bridgetown-build-error"
+      dialog.style.borderColor = "red"
+      dialog.style.fontSize = "110%"
+      dialog.innerHTML = `
+        <p style="color:red">There was an error when building the site:</p>
+        <output><pre></pre></output>
+        <p><small>Check your Bridgetown logs for further details.</small></p>
+      `
+      document.body.appendChild(dialog)
+      dialog.showModal()
+    }
+    dialog.querySelector("pre").textContent = JSON.parse(event.data)
+  })
+
+  connection.addEventListener("error", () => {
+    if (connection.readyState === 2) {
+      // reconnect with new object
+      connection.close()
+      reconnectAttempts++
+      if (reconnectAttempts < 25) {
+        console.warn("Live reload: attempting to reconnect in 3 seconds...")
+        setTimeout(() => startLiveReload(), 3000)
+      } else {
+        console.error("Too many live reload connections failed. Refresh the page to try again.")
+      }
+    }
+  })
+}
+
+startLiveReload()
+</script>
+
+  </head>
+  <body class="page ">
+    <header class="site-header">
+      <nav class="nav-container">
+        <a href="/" class="nav-logo">
+          <span class="logo-text">Language Den</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/support">Support</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+  <div class="page-container">
+    <h1 class="page-title">Support</h1>
+    <p>Need help with Language Den? You’re in the right place.</p>
+
+<p><strong>Email:</strong> <a href="mailto:hey@languageden.com">hey@languageden.com</a></p>
+
+<p>We aim to respond within 1–2 business days.</p>
+
+<hr />
+
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+
+<h3 id="getting-started">Getting started</h3>
+
+<p><strong>How do I add my first word?</strong>
+Tap the <strong>+</strong> button on the Sources or Words screen to add a word manually. You can also import existing vocabulary from an Anki deck (.apkg file) or a CSV file via the Import screen.</p>
+
+<p><strong>Do I need an account?</strong>
+No account is required. Language Den uses iCloud to sync your data across devices, which is handled automatically through your existing Apple ID.</p>
+
+<p><strong>Which languages are supported?</strong>
+Language Den supports 55+ languages including Spanish, French, Japanese, Korean, Mandarin, Arabic, Thai, German, and many more. You select your target language during onboarding and can change it in Settings.</p>
+
+<hr />
+
+<h3 id="ai-features">AI features</h3>
+
+<p><strong>What is OpenRouter and why do I need an API key?</strong>
+OpenRouter is an AI API gateway that gives Language Den access to large language models. These models power automatic flashcard generation — creating definitions, example sentences, and multiple card types for your words. You need to create an account at <a href="https://openrouter.ai">openrouter.ai</a> and add funds to use this feature.</p>
+
+<p><strong>Is the AI feature required?</strong>
+No. You can use Language Den fully without an API key — you can create flashcards manually and use all other features. The AI feature is an optional enhancement.</p>
+
+<p><strong>What is the Unsplash API key for?</strong>
+Unsplash provides access to a library of high-quality photos. With an Unsplash API key, you can search for images to attach to flashcards. You can get a free API key at <a href="https://unsplash.com/developers">unsplash.com/developers</a>.</p>
+
+<hr />
+
+<h3 id="importing">Importing</h3>
+
+<p><strong>What Anki formats are supported?</strong>
+Language Den imports .apkg files (Anki package files). Export your Anki deck as an .apkg file and use the Import option in the app.</p>
+
+<p><strong>What CSV format does the app expect?</strong>
+The app accepts CSV files with at minimum a word column and a translation column. You can map columns during the import process.</p>
+
+<hr />
+
+<h3 id="data-and-sync">Data and sync</h3>
+
+<p><strong>Where is my data stored?</strong>
+Your data is stored on your device and synced to your personal iCloud account using CloudKit. We have no access to your data.</p>
+
+<p><strong>How do I transfer my data to a new device?</strong>
+Sign in to the same iCloud account on your new device and install Language Den. Your data will sync automatically.</p>
+
+<p><strong>How do I delete all my data?</strong>
+Delete the app from your device. To also remove data from iCloud, go to iOS Settings → Apple Account → iCloud → Manage Account Storage → Language Den → Delete Data.</p>
+
+<hr />
+
+<h3 id="spaced-repetition">Spaced repetition</h3>
+
+<p><strong>What algorithm does Language Den use?</strong>
+Language Den uses <a href="https://github.com/open-spaced-repetition/fsrs4anki">FSRS</a> (Free Spaced Repetition Scheduler), an open-source algorithm that has been shown to outperform the older SM-2 algorithm used by traditional Anki. It adapts your review intervals based on your actual performance.</p>
+
+<p><strong>What do the review ratings mean?</strong></p>
+<ul>
+  <li><strong>Again</strong> — you forgot the word; it will be shown again soon</li>
+  <li><strong>Hard</strong> — you remembered, but it was difficult</li>
+  <li><strong>Good</strong> — you remembered correctly with some effort</li>
+  <li><strong>Easy</strong> — you remembered effortlessly; the next interval will be longer</li>
+</ul>
+
+<hr />
+
+<h2 id="contact">Contact</h2>
+
+<p>If your question isn’t answered above, email us at <a href="mailto:hey@languageden.com">hey@languageden.com</a>.</p>
+
+  </div>
+</main>
+
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <span class="logo-text">Language Den</span>
+        </div>
+        <nav class="footer-links">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/support">Support</a>
+          <a href="mailto:hey@languageden.com">hey@languageden.com</a>
+        </nav>
+        <p class="footer-copy">&copy; 2026 Language Den. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
