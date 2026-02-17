@@ -218,6 +218,17 @@ img { max-width: 100%; display: block; }
   position: relative;
 }
 
+.screenshot-filled {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.screenshot-filled img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .screenshot-label {
   font-size: 0.9rem;
   font-weight: 600;
