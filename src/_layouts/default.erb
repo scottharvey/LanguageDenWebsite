@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="<%= site.locale %>">
+  <head>
+    <%= render "head", metadata: site.metadata, title: data.title %>
+  </head>
+  <body class="<%= data.layout %> <%= data.page_class %>">
+    <header class="site-header">
+      <nav class="nav-container">
+        <a href="<%= relative_url '/' %>" class="nav-logo">
+          <span class="logo-text">LanguageDen</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="<%= relative_url '/privacy' %>">Privacy</a></li>
+          <li><a href="<%= relative_url '/support' %>">Support</a></li>
+          <% if site.metadata.app_store_url && !site.metadata.app_store_url.empty? %>
+          <li><a href="<%= site.metadata.app_store_url %>" class="nav-cta">Download</a></li>
+          <% end %>
+        </ul>
+      </nav>
+    </header>
+
+    <%= yield %>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <span class="logo-text">LanguageDen</span>
+        </div>
+        <nav class="footer-links">
+          <a href="<%= relative_url '/privacy' %>">Privacy Policy</a>
+          <a href="<%= relative_url '/support' %>">Support</a>
+          <a href="mailto:<%= site.metadata.email %>"><%= site.metadata.email %></a>
+        </nav>
+        <p class="footer-copy">&copy; <%= Time.now.year %> LanguageDen. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
