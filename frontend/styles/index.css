@@ -203,6 +203,86 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===========================
+   Screenshot Placeholders
+   =========================== */
+.screenshot-placeholder {
+  background: #F3F4F6;
+  border: 2px dashed #D1D5DB;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  min-height: 480px;
+  position: relative;
+}
+
+.screenshot-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #9CA3AF;
+  max-width: 200px;
+  line-height: 1.5;
+}
+
+.screenshot-group--hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 56px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.screenshot-group--hero .screenshot-placeholder {
+  min-height: 520px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.6);
+  border-color: rgba(22, 105, 76, 0.2);
+}
+
+@media (max-width: 768px) {
+  .screenshot-group--hero {
+    grid-template-columns: 1fr;
+    max-width: 280px;
+  }
+}
+
+.screenshot-single {
+  margin-top: 32px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.screenshot-single .screenshot-placeholder {
+  min-height: 520px;
+}
+
+.screenshot-pair {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 32px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.screenshot-pair .screenshot-placeholder {
+  min-height: 480px;
+}
+
+@media (max-width: 580px) {
+  .screenshot-pair {
+    grid-template-columns: 1fr;
+    max-width: 280px;
+  }
+}
+
+/* ===========================
    Long-form Sections
    =========================== */
 .longform-section {
