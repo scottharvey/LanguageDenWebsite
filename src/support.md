@@ -39,6 +39,19 @@ Unsplash provides access to a library of high-quality photos. With an Unsplash A
 
 ---
 
+### Permissions
+
+**Why does Language Den need microphone access?**
+The microphone is used to record audio notes in Quick Notes. Audio is stored on your device and synced through your personal iCloud account — it is never sent to our servers. You can revoke microphone access at any time in Settings → Privacy & Security → Microphone.
+
+**Why does Language Den need speech recognition access?**
+Speech recognition is used to transcribe spoken Quick Notes into text. Transcription happens entirely on-device using Apple's built-in framework — no audio is sent to us. You can revoke this permission at any time in Settings → Privacy & Security → Speech Recognition.
+
+**Why does Language Den need photo library access?**
+Photo library access is used to attach images to flashcards. Only the specific images you select are saved — we do not access or scan your full library. You can revoke this permission at any time in Settings → Privacy & Security → Photos.
+
+---
+
 ### Importing
 
 **What Anki formats are supported?**

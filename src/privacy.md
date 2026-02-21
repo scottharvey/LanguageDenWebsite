@@ -30,16 +30,16 @@ You can delete all data at any time by deleting the app.
 
 ## Device Permissions
 
-The app requests these permissions only when you use the corresponding features:
+The app requests these permissions only when you use the corresponding features. You can grant or revoke any permission at any time in iOS/macOS Settings → Privacy & Security.
 
 **Microphone**
-Used to record audio in Quick Notes. Recordings are stored locally or synced through your iCloud account. Audio is never sent to our servers.
+Used to record audio notes in Quick Notes. Audio recordings are stored on your device and synced through your personal iCloud account. Audio is never sent to our servers or processed by us.
 
 **Speech Recognition**
-Used to transcribe spoken notes into text. Transcription is performed on-device using Apple's speech recognition framework.
+Used to transcribe spoken notes into text. Transcription is performed entirely on-device using Apple's built-in speech recognition framework. No audio or transcription data is sent to us.
 
 **Photo Library**
-Used to attach images to flashcards. Selected images are stored in your app data within iCloud. We do not access your full photo library.
+Used to attach images to flashcards. Only the images you explicitly select are stored in your app data within iCloud. We do not access, scan, or upload your photo library.
 
 ---
 
@@ -60,6 +60,19 @@ These API keys are stored exclusively on your device in the iOS Keychain. We can
 ## Analytics and Advertising
 
 Language Den contains **no analytics**, **no advertising SDKs**, and **no tracking**. We do not use any third-party analytics tools (such as Firebase, Mixpanel, or similar).
+
+---
+
+## Your Rights (GDPR & CCPA)
+
+Because Language Den does not collect any personal data, most rights under GDPR, CCPA, and similar privacy laws are satisfied by default — there is no personal data held by us to access, correct, export, or delete.
+
+All your data (words, flashcards, notes, audio recordings) is stored in your own iCloud account. To delete it:
+
+- **Delete app data:** Go to iOS/macOS Settings → Apple Account → iCloud → Manage Account Storage → Language Den → Delete Data
+- **Delete the app:** Removing Language Den from your device removes all locally stored data
+
+If you have any privacy-related requests or questions, contact us at [hey@languageden.com](mailto:hey@languageden.com).
 
 ---
 
