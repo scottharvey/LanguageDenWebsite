@@ -10,6 +10,7 @@
           <span class="logo-text">Language Den</span>
         </a>
         <ul class="nav-links">
+          <li><a href="<%= relative_url '/docs' %>">Docs</a></li>
           <li><a href="<%= relative_url '/privacy' %>">Privacy</a></li>
           <li><a href="<%= relative_url '/support' %>">Support</a></li>
           <% if site.metadata.app_store_url && !site.metadata.app_store_url.empty? %>
@@ -27,6 +28,7 @@
           <span class="logo-text">Language Den</span>
         </div>
         <nav class="footer-links">
+          <a href="<%= relative_url '/docs' %>">Documentation</a>
           <a href="<%= relative_url '/privacy' %>">Privacy Policy</a>
           <a href="<%= relative_url '/support' %>">Support</a>
           <a href="mailto:<%= site.metadata.email %>"><%= site.metadata.email %></a>

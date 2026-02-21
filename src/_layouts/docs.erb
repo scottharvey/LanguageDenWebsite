@@ -1,0 +1,96 @@
+---
+layout: default
+---
+
+<div class="docs-page">
+  <aside class="docs-sidebar" id="docs-sidebar">
+    <button
+      class="docs-sidebar-toggle"
+      id="docs-sidebar-toggle"
+      aria-expanded="false"
+      aria-controls="docs-nav-inner"
+    >
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      Documentation
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="margin-left:auto;transition:transform 0.2s" id="docs-toggle-chevron" aria-hidden="true">
+        <path d="M2.5 4.5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <div class="docs-nav-inner" id="docs-nav-inner">
+      <nav aria-label="Documentation">
+        <div class="docs-nav-group">
+          <span class="docs-nav-group-label">Introduction</span>
+          <ul class="docs-nav-list">
+            <li>
+              <a href="<%= relative_url '/docs' %>"
+                 class="<%= data.docs_section == 'overview' ? 'docs-nav-active' : '' %>">
+                Overview
+              </a>
+            </li>
+            <li>
+              <a href="<%= relative_url '/docs/getting-started' %>"
+                 class="<%= data.docs_section == 'getting-started' ? 'docs-nav-active' : '' %>">
+                Getting Started
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="docs-nav-group">
+          <span class="docs-nav-group-label">Core Features</span>
+          <ul class="docs-nav-list">
+            <li>
+              <a href="<%= relative_url '/docs/vocabulary' %>"
+                 class="<%= data.docs_section == 'vocabulary' ? 'docs-nav-active' : '' %>">
+                Vocabulary Management
+              </a>
+            </li>
+            <li>
+              <a href="<%= relative_url '/docs/ai-features' %>"
+                 class="<%= data.docs_section == 'ai-features' ? 'docs-nav-active' : '' %>">
+                AI Features
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="docs-nav-group">
+          <span class="docs-nav-group-label">Customization</span>
+          <ul class="docs-nav-list">
+            <li>
+              <a href="<%= relative_url '/docs/settings' %>"
+                 class="<%= data.docs_section == 'settings' ? 'docs-nav-active' : '' %>">
+                Settings &amp; Preferences
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </aside>
+
+  <main class="docs-content" id="main-content">
+    <%= yield %>
+  </main>
+</div>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('docs-sidebar-toggle');
+    var sidebar = document.getElementById('docs-sidebar');
+    var chevron = document.getElementById('docs-toggle-chevron');
+
+    if (toggle && sidebar) {
+      toggle.addEventListener('click', function () {
+        var isOpen = sidebar.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen);
+        if (chevron) {
+          chevron.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+      });
+    }
+  })();
+</script>
