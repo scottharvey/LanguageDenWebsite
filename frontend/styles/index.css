@@ -1173,6 +1173,14 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===========================
+   Theme-aware Screenshots
+   =========================== */
+img.screenshot--dark { display: none; }
+
+[data-theme="dark"] img.screenshot--light { display: none; }
+[data-theme="dark"] img.screenshot--dark  { display: block; }
+
+/* ===========================
    Theme Toggle Button
    =========================== */
 .theme-toggle {
