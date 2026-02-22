@@ -1,7 +1,8 @@
 ---
 layout: docs
-title: Anki
+title: Anki Import
 docs_section: anki
+description: "Import your existing Anki vocabulary into Language Den from an .apkg file. Cards, audio, and image media are preserved during import."
 ---
 
 # Anki Import

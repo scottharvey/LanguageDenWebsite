@@ -2,6 +2,7 @@
 layout: docs
 title: Statistics
 docs_section: statistics
+description: "Track your learning progress, review consistency, and vocabulary mastery all from the Language Den Home tab."
 ---
 
 # Statistics

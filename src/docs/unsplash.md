@@ -2,6 +2,7 @@
 layout: docs
 title: Unsplash
 docs_section: unsplash
+description: "Set up your Unsplash API key to automatically find images for noun flashcards in Language Den — no manual searching required."
 ---
 
 # Unsplash

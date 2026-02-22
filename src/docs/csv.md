@@ -1,7 +1,8 @@
 ---
 layout: docs
-title: CSV
+title: CSV Import
 docs_section: csv
+description: "Import words in bulk from a CSV or plain text file — migrate vocabulary from spreadsheets, Quizlet exports, or any delimited text source into Language Den."
 ---
 
 # CSV Import

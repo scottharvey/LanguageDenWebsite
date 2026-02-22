@@ -2,6 +2,7 @@
 layout: docs
 title: Generating Flashcards
 docs_section: generating-flashcards
+description: "Use AI to automatically generate a full set of flashcards — definitions, example sentences, and card types — for any word in any language."
 ---
 
 # Generating Flashcards

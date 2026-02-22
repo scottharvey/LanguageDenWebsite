@@ -2,6 +2,7 @@
 layout: docs
 title: Getting Started
 docs_section: getting-started
+description: "Get up and running with Language Den in under five minutes. Install the app, choose a language, create your first word list, and start your first study session."
 ---
 
 # Getting Started

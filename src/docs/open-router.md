@@ -2,6 +2,7 @@
 layout: docs
 title: OpenRouter
 docs_section: open-router
+description: "Set up your OpenRouter API key to enable AI-powered flashcard generation in Language Den. Supports Claude, GPT-4, and other leading language models."
 ---
 
 # OpenRouter

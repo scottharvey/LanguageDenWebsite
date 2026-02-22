@@ -2,6 +2,7 @@
 layout: docs
 title: Flashcard Types
 docs_section: flashcard-types
+description: "Language Den tests your vocabulary from ten different angles, automatically choosing the right card type based on how well you know each word."
 ---
 
 # Flashcard Types

@@ -2,6 +2,7 @@
 layout: docs
 title: Quick Notes
 docs_section: quick-notes
+description: "Capture words on the fly from a TV show, conversation, or book, then turn them into full flashcards later with a single tap in Language Den."
 ---
 
 # Quick Notes

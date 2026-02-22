@@ -2,6 +2,7 @@
 layout: docs
 title: iCloud Sync
 docs_section: icloud-sync
+description: "Keep your vocabulary, flashcards, and review history in sync across all your Apple devices with automatic iCloud sync — no account required."
 ---
 
 # iCloud Sync

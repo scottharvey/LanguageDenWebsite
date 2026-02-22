@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Privacy Policy
+description: "Language Den collects no analytics, shows no ads, and sells no data. Your vocabulary stays on your device and in your personal iCloud account."
 ---
 
 *Last updated: February 2026*

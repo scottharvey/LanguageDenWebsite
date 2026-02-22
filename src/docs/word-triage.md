@@ -2,6 +2,7 @@
 layout: docs
 title: Word Triage
 docs_section: word-triage
+description: "Review newly added or imported words one by one — keep, delete, or generate flashcards immediately during the Language Den triage process."
 ---
 
 # Word Triage

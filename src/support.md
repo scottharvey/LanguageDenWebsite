@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Support
+description: "Get help with Language Den — answers to common questions about getting started, AI features, Anki import, iCloud sync, and spaced repetition."
 ---
 
 Need help with Language Den? You're in the right place.

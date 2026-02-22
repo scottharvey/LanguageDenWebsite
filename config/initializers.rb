@@ -18,6 +18,9 @@ Bridgetown.configure do |config|
   # The base hostname & protocol for your site, e.g. https://example.com
   url "https://languageden.com"
 
+  # Site locale — used for the <html lang="..."> attribute
+  locale "en"
+
   # Available options are `erb` (default), `serbea`, or `liquid`
   template_engine "erb"
 

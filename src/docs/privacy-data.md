@@ -2,6 +2,7 @@
 layout: docs
 title: Privacy & Data
 docs_section: privacy-data
+description: "How Language Den handles your data: stored on-device and in your personal iCloud, never on our servers. Learn what is stored and how to delete it."
 ---
 
 # Privacy & Data

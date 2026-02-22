@@ -5,3 +5,5 @@ description: >-
   AI-powered flashcard generation, Anki import, and iCloud sync across all your devices.
 email: hey@languageden.com
 app_store_url: "https://apps.apple.com/app/id6758642642"
+app_store_id: "6758642642"
+og_image: "/images/og-image.png"

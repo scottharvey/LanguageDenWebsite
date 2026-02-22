@@ -2,6 +2,7 @@
 layout: docs
 title: Adding Words
 docs_section: adding-words
+description: "Three ways to add vocabulary to Language Den: manual entry with AI assistance, manual entry without AI, and bulk import from CSV or Anki files."
 ---
 
 # Adding Words

@@ -2,6 +2,7 @@
 layout: docs
 title: Supported Languages
 docs_section: supported-languages
+description: "Language Den works with any language you can type — Spanish, Japanese, Arabic, Korean, Mandarin, and 50+ more. No fixed curriculum, no limitations."
 ---
 
 # Supported Languages

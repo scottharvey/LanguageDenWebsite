@@ -2,6 +2,7 @@
 layout: docs
 title: Spaced Repetition
 docs_section: spaced-repetition
+description: "Learn how Language Den uses the FSRS algorithm to schedule reviews and maximize long-term vocabulary retention with minimum study time."
 ---
 
 # Spaced Repetition

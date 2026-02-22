@@ -2,6 +2,7 @@
 layout: docs
 title: Best Practices
 docs_section: best-practices
+description: "Tips and strategies for building an effective vocabulary habit with Language Den — how to add words, set review goals, and use spaced repetition effectively."
 ---
 
 # Best Practices

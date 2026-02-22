@@ -2,6 +2,7 @@
 layout: docs
 title: Troubleshooting
 docs_section: troubleshooting
+description: "Solutions to common Language Den issues — sync problems, AI features not working, import errors, and review scheduling questions."
 ---
 
 # Troubleshooting

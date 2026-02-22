@@ -2,6 +2,7 @@
 layout: docs
 title: Word Filters
 docs_section: word-filters
+description: "Find and manage specific words in your Language Den collection using filters for mastery level, source, card type, and more."
 ---
 
 # Word Filters

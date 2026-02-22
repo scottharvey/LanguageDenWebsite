@@ -2,6 +2,7 @@
 layout: docs
 title: Word Sources
 docs_section: word-sources
+description: "Organise your vocabulary by source — a book, TV series, podcast, or course — and study words in the context of where you found them."
 ---
 
 # Word Sources

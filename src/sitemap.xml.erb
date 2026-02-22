@@ -1,0 +1,17 @@
+---
+permalink: /sitemap.xml
+layout: none
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <% site.collections.pages.resources.each do |resource| %>
+    <% next if resource.data.sitemap == false %>
+    <% next if resource.relative_url.to_s.match?(/\/(404|500)(\/|$)/) %>
+    <url>
+      <loc><%= site.config.url %><%= resource.relative_url %></loc>
+      <lastmod><%= (resource.date || Time.now).strftime('%Y-%m-%d') %></lastmod>
+      <priority><%= resource.relative_url.to_s == "/" ? "1.0" : "0.8" %></priority>
+    </url>
+  <% end %>
+</urlset>

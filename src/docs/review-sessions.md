@@ -2,6 +2,7 @@
 layout: docs
 title: Review Sessions
 docs_section: review-sessions
+description: "How review sessions work in Language Den — what cards appear, how your ratings (Again, Hard, Good, Easy) affect future spaced repetition scheduling."
 ---
 
 # Review Sessions

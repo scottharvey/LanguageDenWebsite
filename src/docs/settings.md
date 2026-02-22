@@ -2,6 +2,7 @@
 layout: docs
 title: Settings & Preferences
 docs_section: settings
+description: "Complete reference for all Language Den settings — study session size, spaced repetition parameters, notifications, language, and display preferences."
 ---
 
 # Settings & Preferences
