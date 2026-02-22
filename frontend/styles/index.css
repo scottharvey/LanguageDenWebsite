@@ -20,6 +20,25 @@
 }
 
 /* ===========================
+   Dark Mode Variables
+   =========================== */
+[data-theme="dark"] {
+  --primary: #34D399;
+  --primary-dark: #6EE7B7;
+  --primary-light: #10B981;
+  --accent: #34D399;
+  --text: #F1F5F9;
+  --text-muted: #94A3B8;
+  --text-light: #475569;
+  --bg: #081811;
+  --bg-subtle: #0D2116;
+  --bg-card: #0D2116;
+  --border: #1C3A26;
+  --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 4px 16px rgba(0,0,0,0.2);
+  --shadow-lg: 0 4px 6px rgba(0,0,0,0.3), 0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* ===========================
    Reset & Base
    =========================== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1151,4 +1170,126 @@ img { max-width: 100%; display: block; }
   font-size: 0.8rem;
   color: var(--text-light);
   margin: 0;
+}
+
+/* ===========================
+   Theme Toggle Button
+   =========================== */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px 6px 6px;
+  color: var(--text-muted);
+  border-radius: 8px;
+  transition: background 0.15s, color 0.15s;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  background: var(--bg-subtle);
+  color: var(--text);
+}
+
+/* Show sun in dark mode (to switch to light), moon in light mode (to switch to dark) */
+.theme-icon--sun { display: none; }
+.theme-icon--moon { display: block; }
+
+[data-theme="dark"] .theme-icon--sun { display: block; }
+[data-theme="dark"] .theme-icon--moon { display: none; }
+
+/* ===========================
+   Dark Mode — Hard-coded color overrides
+   =========================== */
+
+/* Header */
+[data-theme="dark"] .site-header {
+  background: rgba(8, 24, 17, 0.92);
+}
+
+/* Mobile nav dropdown */
+@media (max-width: 640px) {
+  [data-theme="dark"] .nav-links {
+    background: rgba(8, 24, 17, 0.97);
+  }
+}
+
+/* Hero */
+[data-theme="dark"] .hero {
+  background: linear-gradient(135deg, #0D2318 0%, #0A1F14 50%, #071A0F 100%);
+}
+
+[data-theme="dark"] .screenshot-group--hero .screenshot-placeholder {
+  background: rgba(30, 41, 59, 0.6);
+  border-color: rgba(52, 211, 153, 0.2);
+}
+
+/* Accent sections */
+[data-theme="dark"] .longform-section--accent {
+  background: linear-gradient(135deg, #0D2318 0%, #071A0F 100%);
+}
+
+/* Highlight boxes */
+[data-theme="dark"] .highlight-box {
+  background: var(--bg-card);
+}
+
+[data-theme="dark"] .highlight-box--green {
+  background: rgba(52, 211, 153, 0.08);
+}
+
+/* Screenshot placeholders */
+[data-theme="dark"] .screenshot-placeholder {
+  background: #0D2116;
+  border-color: #1C3A26;
+}
+
+/* Comparison table */
+[data-theme="dark"] .comparison-highlight {
+  background: rgba(52, 211, 153, 0.15) !important;
+  color: var(--primary-dark) !important;
+}
+
+[data-theme="dark"] .comparison-table tbody tr:hover {
+  background: rgba(52, 211, 153, 0.05);
+}
+
+/* Inline code */
+[data-theme="dark"] .docs-content code {
+  background: #0D2116;
+  border-color: var(--border);
+  color: var(--primary-dark);
+}
+
+/* Callouts */
+[data-theme="dark"] .docs-callout {
+  background: rgba(52, 211, 153, 0.08);
+}
+
+[data-theme="dark"] .docs-callout--warning {
+  background: rgba(217, 119, 6, 0.1);
+}
+
+[data-theme="dark"] .docs-callout--info {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+[data-theme="dark"] .docs-callout-title {
+  color: var(--primary);
+}
+
+[data-theme="dark"] .docs-callout--warning .docs-callout-title {
+  color: #FCD34D;
+}
+
+[data-theme="dark"] .docs-callout--info .docs-callout-title {
+  color: #93C5FD;
+}
+
+/* Docs table row hover */
+[data-theme="dark"] .docs-content table tr:hover td {
+  background: rgba(52, 211, 153, 0.05);
 }
