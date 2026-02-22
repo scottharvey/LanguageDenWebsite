@@ -92,8 +92,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Intervals grow exponent
 
 Now that you've completed your first session, explore these topics:
 
-- [Vocabulary Management](/docs/vocabulary/) — Import words in bulk, add images, and organise with tags
-- [AI Features](/docs/ai-features/) — Auto-generate definitions, example sentences, and audio
+- [Adding Words](/docs/adding-words/) — Import words in bulk or add them one by one with AI assistance
+- [Generating Flashcards](/docs/generating-flashcards/) — Auto-generate definitions, example sentences, and card types
 - [Settings & Preferences](/docs/settings/) — Tune the SRS algorithm, notification schedule, and app appearance
 
 <div class="docs-callout docs-callout--warning">

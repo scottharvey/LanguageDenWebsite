@@ -4,20 +4,23 @@ layout: default
 
 <div class="docs-page">
   <aside class="docs-sidebar" id="docs-sidebar">
-    <button
-      class="docs-sidebar-toggle"
-      id="docs-sidebar-toggle"
-      aria-expanded="false"
-      aria-controls="docs-nav-inner"
-    >
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-        <path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-      </svg>
-      Documentation
-      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" style="margin-left:auto;transition:transform 0.2s" id="docs-toggle-chevron" aria-hidden="true">
-        <path d="M2.5 4.5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
+    <div class="docs-sidebar-header">
+      <span class="docs-sidebar-title">Documentation</span>
+      <button
+        class="docs-sidebar-toggle"
+        id="docs-sidebar-toggle"
+        aria-label="Toggle documentation navigation"
+        aria-expanded="false"
+        aria-controls="docs-nav-inner"
+      >
+        <svg class="docs-toggle-icon docs-toggle-icon--open" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+        </svg>
+        <svg class="docs-toggle-icon docs-toggle-icon--close" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
 
     <div class="docs-nav-inner" id="docs-nav-inner">
       <nav aria-label="Documentation">
@@ -35,6 +38,12 @@ layout: default
               <a href="<%= relative_url '/docs/getting-started' %>"
                  class="<%= data.docs_section == 'getting-started' ? 'docs-nav-active' : '' %>">
                 Getting Started
+              </a>
+            </li>
+            <li>
+              <a href="<%= relative_url '/docs/best-practices' %>"
+                 class="<%= data.docs_section == 'best-practices' ? 'docs-nav-active' : '' %>">
+                Best Practices
               </a>
             </li>
           </ul>
@@ -169,6 +178,18 @@ layout: default
                 Privacy &amp; Data
               </a>
             </li>
+            <li>
+              <a href="<%= relative_url '/docs/icloud-sync' %>"
+                 class="<%= data.docs_section == 'icloud-sync' ? 'docs-nav-active' : '' %>">
+                iCloud Sync
+              </a>
+            </li>
+            <li>
+              <a href="<%= relative_url '/docs/troubleshooting' %>"
+                 class="<%= data.docs_section == 'troubleshooting' ? 'docs-nav-active' : '' %>">
+                Troubleshooting
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -185,15 +206,11 @@ layout: default
   (function () {
     var toggle = document.getElementById('docs-sidebar-toggle');
     var sidebar = document.getElementById('docs-sidebar');
-    var chevron = document.getElementById('docs-toggle-chevron');
 
     if (toggle && sidebar) {
       toggle.addEventListener('click', function () {
         var isOpen = sidebar.classList.toggle('is-open');
         toggle.setAttribute('aria-expanded', isOpen);
-        if (chevron) {
-          chevron.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
-        }
       });
     }
   })();

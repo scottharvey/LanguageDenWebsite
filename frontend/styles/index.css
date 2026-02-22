@@ -75,6 +75,13 @@ img { max-width: 100%; display: block; }
 
 .logo-icon { font-size: 1.4rem; }
 
+.nav-logo-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  flex-shrink: 0;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -105,6 +112,59 @@ img { max-width: 100%; display: block; }
 
 .nav-cta:hover {
   background: var(--primary-dark) !important;
+}
+
+/* Hamburger toggle — hidden on desktop */
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  color: var(--text);
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+.nav-toggle:hover { background: var(--bg-subtle); }
+.nav-toggle-icon--close { display: none; }
+
+@media (max-width: 640px) {
+  .nav-toggle { display: flex; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 16px 20px;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    z-index: 99;
+  }
+
+  .site-header.nav-open .nav-links { display: flex; }
+
+  .nav-links a {
+    font-size: 1rem;
+    padding: 10px 14px;
+    border-radius: 8px;
+  }
+
+  .nav-links .nav-cta {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .site-header.nav-open .nav-toggle-icon--open { display: none; }
+  .site-header.nav-open .nav-toggle-icon--close { display: block; }
 }
 
 /* ===========================
@@ -970,21 +1030,35 @@ img { max-width: 100%; display: block; }
   line-height: 1.5;
 }
 
-.docs-sidebar-toggle {
+.docs-sidebar-header {
   display: none;
-  width: 100%;
-  text-align: left;
-  background: none;
-  border: none;
-  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.docs-sidebar-title {
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--text);
-  cursor: pointer;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 20px;
 }
+
+.docs-sidebar-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  color: var(--text);
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.docs-sidebar-toggle:hover { background: var(--bg-subtle); }
+
+.docs-toggle-icon--close { display: none; }
 
 .docs-nav-inner {
   display: block;
@@ -1003,18 +1077,21 @@ img { max-width: 100%; display: block; }
     padding: 20px 24px;
   }
 
-  .docs-sidebar-toggle {
+  .docs-sidebar-header {
     display: flex;
   }
 
   .docs-nav-inner {
     display: none;
-    padding-top: 8px;
+    padding-top: 16px;
   }
 
   .docs-sidebar.is-open .docs-nav-inner {
     display: block;
   }
+
+  .docs-sidebar.is-open .docs-toggle-icon--open { display: none; }
+  .docs-sidebar.is-open .docs-toggle-icon--close { display: block; }
 
   .docs-content {
     padding: 32px 24px 60px;

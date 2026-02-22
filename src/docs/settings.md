@@ -140,7 +140,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 | Export All Data | Export all lists and progress as a ZIP archive |
 | Import from Anki | Import an Anki deck (.apkg file) |
 
-See [Vocabulary Management → Importing Words](/docs/vocabulary/) for the expected CSV format and step-by-step instructions.
+See [CSV Import](/docs/csv/) and [Anki Import](/docs/anki/) for format details and step-by-step instructions.
 
 ---
 

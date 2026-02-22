@@ -6,103 +6,138 @@ docs_section: overview
 
 <h1>Documentation</h1>
 <p class="docs-subtitle">
-  Everything you need to learn Language Den. Browse the guides below or use the sidebar to navigate to a specific topic.
+  Everything you need to use Language Den. Browse the sections below or use the sidebar to jump to a specific topic.
 </p>
 
 <h2>Getting Started</h2>
 <p>
-  New to Language Den? Start here. These guides walk you through installing the app, creating your first word list, and running your first study session from scratch.
+  New to Language Den? Start here.
 </p>
 
 <div class="docs-card-grid">
   <a href="<%= relative_url '/docs/getting-started' %>" class="docs-card">
     <div class="docs-card-icon">🚀</div>
     <div class="docs-card-title">Getting Started</div>
-    <div class="docs-card-desc">Install the app and set up your first vocabulary list in minutes.</div>
+    <div class="docs-card-desc">Install the app, configure your language, and add your first word.</div>
   </a>
-  <a href="<%= relative_url '/docs/vocabulary' %>" class="docs-card">
-    <div class="docs-card-icon">📖</div>
-    <div class="docs-card-title">Vocabulary Management</div>
-    <div class="docs-card-desc">Learn how to add, organise, and review your words and phrases.</div>
+  <a href="<%= relative_url '/docs/adding-words' %>" class="docs-card">
+    <div class="docs-card-icon">➕</div>
+    <div class="docs-card-title">Adding Words</div>
+    <div class="docs-card-desc">Add vocabulary manually, with AI assistance, or by importing a file.</div>
   </a>
-  <a href="<%= relative_url '/docs/ai-features' %>" class="docs-card">
-    <div class="docs-card-icon">✨</div>
-    <div class="docs-card-title">AI Features</div>
-    <div class="docs-card-desc">Use AI-powered definitions, examples, and pronunciation guides.</div>
+  <a href="<%= relative_url '/docs/review-sessions' %>" class="docs-card">
+    <div class="docs-card-icon">🎯</div>
+    <div class="docs-card-title">Review Sessions</div>
+    <div class="docs-card-desc">Practice your vocabulary with spaced-repetition flashcard sessions.</div>
   </a>
   <a href="<%= relative_url '/docs/settings' %>" class="docs-card">
     <div class="docs-card-icon">⚙️</div>
     <div class="docs-card-title">Settings &amp; Preferences</div>
-    <div class="docs-card-desc">Customise study intervals, notifications, themes, and more.</div>
+    <div class="docs-card-desc">Configure your language, API keys, metadata fields, and more.</div>
+  </a>
+  <a href="<%= relative_url '/docs/best-practices' %>" class="docs-card">
+    <div class="docs-card-icon">💡</div>
+    <div class="docs-card-title">Best Practices</div>
+    <div class="docs-card-desc">Tips for building an effective and sustainable vocabulary habit.</div>
   </a>
 </div>
 
-<h2>About this Documentation</h2>
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<p>
-  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-</p>
+<h2>Core Features</h2>
 
-<div class="docs-callout docs-callout--info">
-  <div class="docs-callout-title">Note</div>
-  <p>This documentation is for Language Den version 1.0 and later. Some features described here may not be available on older versions of iOS.</p>
+<div class="docs-card-grid">
+  <a href="<%= relative_url '/docs/flashcard-types' %>" class="docs-card">
+    <div class="docs-card-icon">🃏</div>
+    <div class="docs-card-title">Flashcard Types</div>
+    <div class="docs-card-desc">Ten card types test recognition, production, listening, and context.</div>
+  </a>
+  <a href="<%= relative_url '/docs/generating-flashcards' %>" class="docs-card">
+    <div class="docs-card-icon">✨</div>
+    <div class="docs-card-title">Generating Flashcards</div>
+    <div class="docs-card-desc">Use AI to automatically create flashcards for any word.</div>
+  </a>
+  <a href="<%= relative_url '/docs/spaced-repetition' %>" class="docs-card">
+    <div class="docs-card-icon">📈</div>
+    <div class="docs-card-title">Spaced Repetition</div>
+    <div class="docs-card-desc">How Language Den schedules reviews to maximise long-term retention.</div>
+  </a>
+  <a href="<%= relative_url '/docs/statistics' %>" class="docs-card">
+    <div class="docs-card-icon">📊</div>
+    <div class="docs-card-title">Statistics</div>
+    <div class="docs-card-desc">Track your streak, accuracy, and mastery over time.</div>
+  </a>
+  <a href="<%= relative_url '/docs/word-sources' %>" class="docs-card">
+    <div class="docs-card-icon">📚</div>
+    <div class="docs-card-title">Word Sources</div>
+    <div class="docs-card-desc">Organise vocabulary by book, show, podcast, or any other source.</div>
+  </a>
+  <a href="<%= relative_url '/docs/word-triage' %>" class="docs-card">
+    <div class="docs-card-icon">🗂</div>
+    <div class="docs-card-title">Word Triage</div>
+    <div class="docs-card-desc">Quickly process imported words — keep, generate, or discard.</div>
+  </a>
+  <a href="<%= relative_url '/docs/word-filters' %>" class="docs-card">
+    <div class="docs-card-icon">🔍</div>
+    <div class="docs-card-title">Word Filters</div>
+    <div class="docs-card-desc">Filter and search your collection by status, flag, or keyword.</div>
+  </a>
+  <a href="<%= relative_url '/docs/quick-notes' %>" class="docs-card">
+    <div class="docs-card-icon">🎙️</div>
+    <div class="docs-card-title">Quick Notes</div>
+    <div class="docs-card-desc">Capture words on the go with text or audio — add them properly later.</div>
+  </a>
 </div>
 
-<h2>Supported Languages</h2>
-<p>
-  Language Den currently supports the following target languages. More are being added regularly — check the app for the latest list.
-</p>
+<h2>API Keys</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Language</th>
-      <th>Script</th>
-      <th>AI Support</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Spanish</td>
-      <td>Latin</td>
-      <td>Full</td>
-    </tr>
-    <tr>
-      <td>French</td>
-      <td>Latin</td>
-      <td>Full</td>
-    </tr>
-    <tr>
-      <td>Japanese</td>
-      <td>Kanji / Kana</td>
-      <td>Full</td>
-    </tr>
-    <tr>
-      <td>Mandarin Chinese</td>
-      <td>Simplified / Traditional</td>
-      <td>Full</td>
-    </tr>
-    <tr>
-      <td>German</td>
-      <td>Latin</td>
-      <td>Full</td>
-    </tr>
-    <tr>
-      <td>Korean</td>
-      <td>Hangul</td>
-      <td>Full</td>
-    </tr>
-    <tr>
-      <td>Arabic</td>
-      <td>Arabic</td>
-      <td>Partial</td>
-    </tr>
-  </tbody>
-</table>
+<div class="docs-card-grid">
+  <a href="<%= relative_url '/docs/open-router' %>" class="docs-card">
+    <div class="docs-card-icon">🤖</div>
+    <div class="docs-card-title">OpenRouter</div>
+    <div class="docs-card-desc">Connect an OpenRouter key to enable AI word analysis and flashcard generation.</div>
+  </a>
+  <a href="<%= relative_url '/docs/unsplash' %>" class="docs-card">
+    <div class="docs-card-icon">🖼️</div>
+    <div class="docs-card-title">Unsplash</div>
+    <div class="docs-card-desc">Connect an Unsplash key to attach images to noun flashcards automatically.</div>
+  </a>
+</div>
 
-<h2>Need Help?</h2>
-<p>
-  If you can't find what you're looking for, check the <a href="<%= relative_url '/support' %>">Support page</a> or reach out at <a href="mailto:<%= site.metadata.email %>"><%= site.metadata.email %></a>. We're happy to help.
-</p>
+<h2>Import &amp; Export</h2>
+
+<div class="docs-card-grid">
+  <a href="<%= relative_url '/docs/anki' %>" class="docs-card">
+    <div class="docs-card-icon">📦</div>
+    <div class="docs-card-title">Anki Import</div>
+    <div class="docs-card-desc">Import an Anki .apkg deck and map fields to Language Den.</div>
+  </a>
+  <a href="<%= relative_url '/docs/csv' %>" class="docs-card">
+    <div class="docs-card-icon">📄</div>
+    <div class="docs-card-title">CSV Import</div>
+    <div class="docs-card-desc">Import a spreadsheet of words using accepted column names.</div>
+  </a>
+</div>
+
+<h2>Reference</h2>
+
+<div class="docs-card-grid">
+  <a href="<%= relative_url '/docs/supported-languages' %>" class="docs-card">
+    <div class="docs-card-icon">🌍</div>
+    <div class="docs-card-title">Supported Languages</div>
+    <div class="docs-card-desc">All 59 target languages, script support, and right-to-left input.</div>
+  </a>
+  <a href="<%= relative_url '/docs/privacy-data' %>" class="docs-card">
+    <div class="docs-card-icon">🔒</div>
+    <div class="docs-card-title">Privacy &amp; Data</div>
+    <div class="docs-card-desc">What data is stored, what leaves your device, and how to delete everything.</div>
+  </a>
+  <a href="<%= relative_url '/docs/icloud-sync' %>" class="docs-card">
+    <div class="docs-card-icon">☁️</div>
+    <div class="docs-card-title">iCloud Sync</div>
+    <div class="docs-card-desc">Keep vocabulary and review history in sync across all your Apple devices.</div>
+  </a>
+  <a href="<%= relative_url '/docs/troubleshooting' %>" class="docs-card">
+    <div class="docs-card-icon">🛠️</div>
+    <div class="docs-card-title">Troubleshooting</div>
+    <div class="docs-card-desc">Solutions to common issues with AI features, sync, import, and more.</div>
+  </a>
+</div>

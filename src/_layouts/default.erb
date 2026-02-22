@@ -12,12 +12,21 @@
     </script>
   </head>
   <body class="<%= data.layout %> <%= data.page_class %>">
-    <header class="site-header">
+    <header class="site-header" id="site-header">
       <nav class="nav-container">
         <a href="<%= relative_url '/' %>" class="nav-logo">
+          <img src="<%= relative_url '/images/app-icon.png' %>" alt="" class="nav-logo-icon" width="28" height="28" aria-hidden="true">
           <span class="logo-text">Language Den</span>
         </a>
-        <ul class="nav-links">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+          <svg class="nav-toggle-icon nav-toggle-icon--open" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+          </svg>
+          <svg class="nav-toggle-icon nav-toggle-icon--close" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <ul class="nav-links" id="nav-links">
           <li><a href="<%= relative_url '/docs' %>">Docs</a></li>
           <li><a href="<%= relative_url '/privacy' %>">Privacy</a></li>
           <li><a href="<%= relative_url '/support' %>">Support</a></li>
@@ -27,6 +36,45 @@
         </ul>
       </nav>
     </header>
+    <script>
+      (function () {
+        var toggle = document.getElementById('nav-toggle');
+        var header = document.getElementById('site-header');
+        var links = document.getElementById('nav-links');
+        if (!toggle || !header) return;
+
+        function openMenu() {
+          header.classList.add('nav-open');
+          toggle.setAttribute('aria-expanded', 'true');
+        }
+        function closeMenu() {
+          header.classList.remove('nav-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+
+        toggle.addEventListener('click', function (e) {
+          e.stopPropagation();
+          header.classList.contains('nav-open') ? closeMenu() : openMenu();
+        });
+
+        // Close when a nav link is clicked
+        if (links) {
+          links.querySelectorAll('a').forEach(function (a) {
+            a.addEventListener('click', closeMenu);
+          });
+        }
+
+        // Close on outside click
+        document.addEventListener('click', function (e) {
+          if (!header.contains(e.target)) closeMenu();
+        });
+
+        // Close on Escape
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeMenu();
+        });
+      })();
+    </script>
 
     <%= yield %>
 
