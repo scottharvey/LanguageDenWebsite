@@ -845,7 +845,8 @@ img { max-width: 100%; display: block; }
   color: var(--primary-dark);
 }
 
-.docs-content pre {
+.docs-content pre,
+.docs-content pre.highlight {
   background: #1A2130;
   border-radius: var(--radius);
   padding: 20px 24px;

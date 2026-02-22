@@ -21,6 +21,7 @@ layout: default
 
     <div class="docs-nav-inner" id="docs-nav-inner">
       <nav aria-label="Documentation">
+
         <div class="docs-nav-group">
           <span class="docs-nav-group-label">Introduction</span>
           <ul class="docs-nav-list">
@@ -43,22 +44,118 @@ layout: default
           <span class="docs-nav-group-label">Core Features</span>
           <ul class="docs-nav-list">
             <li>
-              <a href="<%= relative_url '/docs/vocabulary' %>"
-                 class="<%= data.docs_section == 'vocabulary' ? 'docs-nav-active' : '' %>">
-                Vocabulary Management
+              <a href="<%= relative_url '/docs/adding-words' %>"
+                 class="<%= data.docs_section == 'adding-words' ? 'docs-nav-active' : '' %>">
+                Adding Words
               </a>
             </li>
             <li>
-              <a href="<%= relative_url '/docs/ai-features' %>"
-                 class="<%= data.docs_section == 'ai-features' ? 'docs-nav-active' : '' %>">
-                AI Features
+              <a href="<%= relative_url '/docs/flashcard-types' %>"
+                 class="<%= data.docs_section == 'flashcard-types' ? 'docs-nav-active' : '' %>">
+                Flashcard Types
+              </a>
+            </li>
+            <li>
+              <a href="<%= relative_url '/docs/generating-flashcards' %>"
+                 class="<%= data.docs_section == 'generating-flashcards' ? 'docs-nav-active' : '' %>">
+                Generating Flashcards
+              </a>
+            </li>
+            <li>
+              <a href="<%= relative_url '/docs/quick-notes' %>"
+                 class="<%= data.docs_section == 'quick-notes' ? 'docs-nav-active' : '' %>">
+                Quick Notes
+              </a>
+            </li>
+            <li>
+              <a href="<%= relative_url '/docs/review-sessions' %>"
+                 class="<%= data.docs_section == 'review-sessions' ? 'docs-nav-active' : '' %>">
+                Review Sessions
+              </a>
+            </li>
+            <li>
+              <a href="<%= relative_url '/docs/spaced-repetition' %>"
+                 class="<%= data.docs_section == 'spaced-repetition' ? 'docs-nav-active' : '' %>">
+                Spaced Repetition
+              </a>
+            </li>
+            <li>
+              <a href="<%= relative_url '/docs/statistics' %>"
+                 class="<%= data.docs_section == 'statistics' ? 'docs-nav-active' : '' %>">
+                Statistics
+              </a>
+            </li>
+            <li>
+              <a href="<%= relative_url '/docs/word-sources' %>"
+                 class="<%= data.docs_section == 'word-sources' ? 'docs-nav-active' : '' %>">
+                Word Sources
+              </a>
+            </li>
+            <li>
+              <a href="<%= relative_url '/docs/word-triage' %>"
+                 class="<%= data.docs_section == 'word-triage' ? 'docs-nav-active' : '' %>">
+                Word Triage
+              </a>
+            </li>
+            <li>
+              <a href="<%= relative_url '/docs/word-filters' %>"
+                 class="<%= data.docs_section == 'word-filters' ? 'docs-nav-active' : '' %>">
+                Word Filters
               </a>
             </li>
           </ul>
         </div>
 
         <div class="docs-nav-group">
-          <span class="docs-nav-group-label">Customization</span>
+          <span class="docs-nav-group-label">API Usage</span>
+          <ul class="docs-nav-list">
+            <li>
+              <a href="<%= relative_url '/docs/open-router' %>"
+                 class="<%= data.docs_section == 'open-router' ? 'docs-nav-active' : '' %>">
+                OpenRouter
+              </a>
+            </li>
+            <li>
+              <a href="<%= relative_url '/docs/unsplash' %>"
+                 class="<%= data.docs_section == 'unsplash' ? 'docs-nav-active' : '' %>">
+                Unsplash
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="docs-nav-group">
+          <span class="docs-nav-group-label">Languages</span>
+          <ul class="docs-nav-list">
+            <li>
+              <a href="<%= relative_url '/docs/supported-languages' %>"
+                 class="<%= data.docs_section == 'supported-languages' ? 'docs-nav-active' : '' %>">
+                Supported Languages
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="docs-nav-group">
+          <span class="docs-nav-group-label">Import &amp; Export</span>
+          <ul class="docs-nav-list">
+            <li>
+              <a href="<%= relative_url '/docs/anki' %>"
+                 class="<%= data.docs_section == 'anki' ? 'docs-nav-active' : '' %>">
+                Anki
+              </a>
+            </li>
+            <li>
+              <a href="<%= relative_url '/docs/csv' %>"
+                 class="<%= data.docs_section == 'csv' ? 'docs-nav-active' : '' %>">
+                CSV
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="docs-nav-group">
+          <span class="docs-nav-group-label">Reference</span>
           <ul class="docs-nav-list">
             <li>
               <a href="<%= relative_url '/docs/settings' %>"
@@ -66,8 +163,15 @@ layout: default
                 Settings &amp; Preferences
               </a>
             </li>
+            <li>
+              <a href="<%= relative_url '/docs/privacy-data' %>"
+                 class="<%= data.docs_section == 'privacy-data' ? 'docs-nav-active' : '' %>">
+                Privacy &amp; Data
+              </a>
+            </li>
           </ul>
         </div>
+
       </nav>
     </div>
   </aside>
