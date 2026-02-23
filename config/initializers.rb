@@ -103,6 +103,14 @@ Bridgetown.configure do |config|
   # Bridgetown's inflector is based on Dry::Inflector so you can read up on how to add inflection
   # rules here: https://dry-rb.org/gems/dry-inflector/1.0/#custom-inflection-rules
 
+  # Blog posts collection — clean /blog/:slug/ URLs for SEO
+  config.collections = {
+    "posts" => {
+      output: true,
+      permalink: "/blog/:slug/"
+    }
+  }
+
   # For more documentation on how to configure your site using this initializers file,
   # visit: https://edge.bridgetownrb.com/docs/configuration/initializers/
 end

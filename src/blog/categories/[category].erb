@@ -1,0 +1,42 @@
+---
+layout: default
+title: "Category: :category"
+prototype:
+  term: category
+  collection: posts
+---
+
+<%
+  matching_posts = site.collections.posts.resources
+    .reject { |p| p.data.draft && Bridgetown.env == "production" }
+    .select { |r| Array(r.data.categories).map { |c| c.to_s.downcase }.include?(data.category.to_s.downcase) }
+    .sort_by { |p| p.data.date }.reverse
+%>
+
+<main class="blog-main">
+  <div class="blog-container">
+    <header class="blog-header">
+      <p class="blog-breadcrumb"><a href="<%= relative_url '/blog' %>">← All posts</a></p>
+      <h1>Category: <%= data.category %></h1>
+    </header>
+
+    <% if matching_posts.empty? %>
+    <p class="blog-empty">No posts in this category yet.</p>
+    <% else %>
+    <ol class="post-list" reversed>
+      <% matching_posts.each do |post| %>
+      <li class="post-list-item">
+        <div class="post-list-meta">
+          <time datetime="<%= post.data.date.strftime('%Y-%m-%d') %>"><%= post.data.date.strftime('%B %-d, %Y') %></time>
+        </div>
+        <h2 class="post-list-title"><a href="<%= relative_url post.relative_url %>"><%= post.data.title %></a></h2>
+        <% if post.data.description %>
+        <p class="post-list-excerpt"><%= post.data.description %></p>
+        <% end %>
+        <a href="<%= relative_url post.relative_url %>" class="post-read-more">Read more →</a>
+      </li>
+      <% end %>
+    </ol>
+    <% end %>
+  </div>
+</main>

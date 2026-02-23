@@ -2,6 +2,56 @@
 layout: default
 ---
 
-<h1><%= data.title %></h1>
+<%
+  all_posts = site.collections.posts.resources
+    .reject { |p| p.data.draft && Bridgetown.env == "production" }
+    .sort_by { |p| p.data.date }
+  current_index = all_posts.index { |p| p.relative_url == resource.relative_url }
+  prev_post = (current_index && current_index > 0) ? all_posts[current_index - 1] : nil
+  next_post = (current_index && current_index < all_posts.length - 1) ? all_posts[current_index + 1] : nil
+%>
 
-<%= yield %>
+<% if data.draft && Bridgetown.env != "production" %>
+<div class="draft-banner">Draft — not visible in production</div>
+<% end %>
+
+<article class="post-main">
+  <div class="post-container">
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="<%= data.date.strftime('%Y-%m-%d') %>"><%= data.date.strftime('%B %-d, %Y') %></time>
+        <% if data.categories && !data.categories.empty? %>
+        <div class="post-categories">
+          <% Array(data.categories).each do |cat| %>
+          <a href="<%= relative_url "/blog/categories/#{cat.to_s.downcase.gsub(' ', '-')}/" %>" class="post-category"><%= cat %></a>
+          <% end %>
+        </div>
+        <% end %>
+      </div>
+      <h1><%= data.title %></h1>
+    </header>
+
+    <div class="post-content">
+      <%= yield %>
+    </div>
+
+    <% if prev_post || next_post %>
+    <nav class="post-nav" aria-label="Post navigation">
+      <% if prev_post %>
+      <a href="<%= relative_url prev_post.relative_url %>" class="post-nav-link post-nav-prev">
+        <span class="post-nav-label">← Previous</span>
+        <span class="post-nav-title"><%= prev_post.data.title %></span>
+      </a>
+      <% else %>
+      <span></span>
+      <% end %>
+      <% if next_post %>
+      <a href="<%= relative_url next_post.relative_url %>" class="post-nav-link post-nav-next">
+        <span class="post-nav-label">Next →</span>
+        <span class="post-nav-title"><%= next_post.data.title %></span>
+      </a>
+      <% end %>
+    </nav>
+    <% end %>
+  </div>
+</article>

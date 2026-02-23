@@ -1,0 +1,43 @@
+---
+layout: default
+title: Blog
+description: "Language learning tips, app updates, and vocabulary strategies from the Language Den team."
+---
+
+<main class="blog-main">
+  <div class="blog-container">
+    <header class="blog-header">
+      <h1>Blog</h1>
+      <p class="blog-tagline">Language learning tips, app updates, and more.</p>
+    </header>
+
+    <% posts = site.collections.posts.resources
+         .reject { |p| p.data.draft && Bridgetown.env == "production" }
+         .sort_by { |p| p.data.date }.reverse %>
+    <% if posts.empty? %>
+    <p class="blog-empty">No posts yet. Check back soon!</p>
+    <% else %>
+    <ol class="post-list" reversed>
+      <% posts.each do |post| %>
+      <li class="post-list-item">
+        <div class="post-list-meta">
+          <time datetime="<%= post.data.date.strftime('%Y-%m-%d') %>"><%= post.data.date.strftime('%B %-d, %Y') %></time>
+          <% if post.data.categories && !post.data.categories.empty? %>
+          <div class="post-categories">
+            <% Array(post.data.categories).each do |cat| %>
+            <a href="<%= relative_url "/blog/categories/#{cat.to_s.downcase.gsub(' ', '-')}/" %>" class="post-category"><%= cat %></a>
+            <% end %>
+          </div>
+          <% end %>
+        </div>
+        <h2 class="post-list-title"><a href="<%= relative_url post.relative_url %>"><%= post.data.title %></a></h2>
+        <% if post.data.description %>
+        <p class="post-list-excerpt"><%= post.data.description %></p>
+        <% end %>
+        <a href="<%= relative_url post.relative_url %>" class="post-read-more">Read more →</a>
+      </li>
+      <% end %>
+    </ol>
+    <% end %>
+  </div>
+</main>

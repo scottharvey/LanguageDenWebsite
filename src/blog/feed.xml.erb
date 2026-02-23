@@ -1,0 +1,28 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title><%= site.metadata.title %> Blog</title>
+    <description><%= site.metadata.description %></description>
+    <link><%= site.config.url %>/blog/</link>
+    <atom:link href="<%= site.config.url %>/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate><%= Time.now.to_time.rfc822 %></lastBuildDate>
+    <% site.collections.posts.resources
+         .reject { |p| p.data.draft && Bridgetown.env == "production" }
+         .sort_by { |p| p.data.date }.reverse.first(20).each do |post| %>
+    <item>
+      <title><![CDATA[<%= post.data.title %>]]></title>
+      <description><![CDATA[<%= post.data.description %>]]></description>
+      <pubDate><%= post.data.date.to_time.rfc822 %></pubDate>
+      <link><%= site.config.url %><%= post.relative_url %></link>
+      <guid isPermaLink="true"><%= site.config.url %><%= post.relative_url %></guid>
+      <% Array(post.data.categories).each do |cat| %>
+      <category><![CDATA[<%= cat %>]]></category>
+      <% end %>
+    </item>
+    <% end %>
+  </channel>
+</rss>

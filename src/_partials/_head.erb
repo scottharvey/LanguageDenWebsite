@@ -12,6 +12,7 @@
 <meta name="description" content="<%= page_description %>" />
 <meta name="author" content="<%= metadata.title %>" />
 <link rel="canonical" href="<%= site.config.url %><%= resource.relative_url %>" />
+<link rel="alternate" type="application/rss+xml" title="<%= metadata.title %> Blog" href="<%= site.config.url %>/blog/feed.xml" />
 <link rel="icon" href="/favicon.ico" />
 
 <% if metadata.app_store_id %>
@@ -19,7 +20,10 @@
 <% end %>
 
 <!-- Open Graph -->
-<meta property="og:type" content="website" />
+<meta property="og:type" content="<%= data.layout == 'post' ? 'article' : 'website' %>" />
+<% if data.layout == 'post' && data.date %>
+<meta property="article:published_time" content="<%= data.date.iso8601 %>" />
+<% end %>
 <% if is_homepage %>
 <meta property="og:title" content="<%= metadata.title %>" />
 <% else %>
