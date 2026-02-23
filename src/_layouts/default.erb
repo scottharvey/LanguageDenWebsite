@@ -16,33 +16,96 @@
     <header class="site-header" id="site-header">
       <nav class="nav-container">
         <a href="<%= relative_url '/' %>" class="nav-logo">
-          <img src="<%= relative_url '/images/app-icon.png' %>" alt="" class="nav-logo-icon" width="28" height="28" aria-hidden="true">
+          <img
+            src="<%= relative_url '/images/app-icon.png' %>"
+            alt=""
+            class="nav-logo-icon"
+            width="28"
+            height="28"
+            aria-hidden="true"
+          >
           <span class="logo-text">Language Den</span>
         </a>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
-          <svg class="nav-toggle-icon nav-toggle-icon--open" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-            <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <svg
+            class="nav-toggle-icon nav-toggle-icon--open"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M3 5h14M3 10h14M3 15h14"
+              stroke="currentColor"
+              stroke-width="1.75"
+              stroke-linecap="round"
+            />
           </svg>
-          <svg class="nav-toggle-icon nav-toggle-icon--close" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-            <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+          <svg
+            class="nav-toggle-icon nav-toggle-icon--close"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 4l12 12M16 4L4 16"
+              stroke="currentColor"
+              stroke-width="1.75"
+              stroke-linecap="round"
+            />
           </svg>
         </button>
         <ul class="nav-links" id="nav-links">
           <li><a href="<%= relative_url '/docs' %>">Docs</a></li>
           <li><a href="<%= relative_url '/support' %>">Support</a></li>
-          <li>
+          <li class="theme-toggle-item">
             <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-              <svg class="theme-icon theme-icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <svg
+                class="theme-icon theme-icon--sun"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
                 <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
-                <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path
+                  d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
               </svg>
-              <svg class="theme-icon theme-icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg
+                class="theme-icon theme-icon--moon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
+              <span class="theme-toggle-label">Appearance</span>
             </button>
           </li>
           <% if site.metadata.app_store_url && !site.metadata.app_store_url.empty? %>
-          <li><a href="<%= site.metadata.app_store_url %>" class="nav-cta">Download</a></li>
+            <li><a href="<%= site.metadata.app_store_url %>" class="nav-cta">Download</a></li>
           <% end %>
         </ul>
       </nav>
@@ -111,7 +174,9 @@
           <a href="<%= relative_url '/support' %>">Support</a>
           <a href="mailto:<%= site.metadata.email %>"><%= site.metadata.email %></a>
         </nav>
-        <p class="footer-copy">&copy; <%= Time.now.year %> Language Den. All rights reserved.</p>
+        <p class="footer-copy">&copy;
+          <%= Time.now.year %>
+          Language Den. All rights reserved.</p>
       </div>
     </footer>
     <script>

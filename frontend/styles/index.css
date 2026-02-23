@@ -1209,6 +1209,25 @@ img.screenshot--dark { display: none; }
 [data-theme="dark"] .theme-icon--sun { display: block; }
 [data-theme="dark"] .theme-icon--moon { display: none; }
 
+/* Label hidden on desktop, shown on mobile */
+.theme-toggle-label { display: none; }
+
+@media (max-width: 640px) {
+  .theme-toggle-item { width: 100%; }
+
+  .theme-toggle {
+    width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+
+  .theme-toggle-label { display: inline; }
+}
+
 /* ===========================
    Dark Mode — Hard-coded color overrides
    =========================== */
