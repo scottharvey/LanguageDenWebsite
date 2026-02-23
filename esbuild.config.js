@@ -38,7 +38,9 @@ const esbuildOptions = {
   ],
   globOptions: {
     excludeFilter: /\.(dsd|lit)\.css$/
-  }
+  },
+  // Target modern browsers only — avoids unnecessary legacy JS transpilation
+  target: ['safari15', 'chrome90', 'firefox88', 'edge90'],
 }
 
 build(esbuildOptions)

@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+# Converts PNG files in src/images/ to WebP.
+# Skips og-image.png and app-icon.png (used as-is by OG tags and app icons).
+# Requires cwebp: brew install webp
+
+set -euo pipefail
+
+IMAGES_DIR="$(dirname "$0")/../src/images"
+QUALITY=90
+SKIP=("og-image" "app-icon")
+
+if ! command -v cwebp &>/dev/null; then
+  echo "Error: cwebp not found. Install it with: brew install webp" >&2
+  exit 1
+fi
+
+converted=0
+skipped=0
+
+for f in "$IMAGES_DIR"/*.png; do
+  [[ -e "$f" ]] || continue  # no-op if glob finds nothing
+  base="${f%.png}"
+  name=$(basename "$base")
+
+  # Check skip list
+  skip=false
+  for s in "${SKIP[@]}"; do
+    [[ "$name" == "$s" ]] && skip=true && break
+  done
+
+  if $skip; then
+    echo "  skip  $name.png"
+    ((skipped++))
+    continue
+  fi
+
+  cwebp -q $QUALITY -quiet "$f" -o "${base}.webp"
+  echo "  ✓     $name.png → $name.webp"
+  ((converted++))
+done
+
+echo ""
+echo "Done. Converted: $converted, Skipped: $skipped"
