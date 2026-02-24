@@ -45,13 +45,13 @@ Step-by-step guide based on the actual iOS implementation. Address real concerns
 - Success screen shows imported/skipped counts
 
 ### 4. What Transfers Over (Verified from Code)
-- ✅ Words from your notes (one word per note)
+- ✅ Words from your notes (imported as Word objects)
 - ✅ Images and audio files
-- ✅ Custom fields (via mapping to metadata)
+- ✅ Custom fields (stored as metadata via field mapping)
 - ✅ Tags → Categories conversion
 - ✅ Duplicate detection (won't reimport existing words)
 - ⚠️ Review history (starts fresh with FSRS algorithm)
-- ⚠️ Complex card types (cloze, multiple cards per note) simplified to single flashcards
+- ℹ️ After import, you can generate multiple flashcard types per word (Recognition, Production, Cloze, etc.)
 
 ### 5. Additional Import Options
 - **CSV Import**: For spreadsheet users
@@ -67,7 +67,13 @@ Step-by-step guide based on the actual iOS implementation. Address real concerns
 
 ### 7. After Import: What's Different
 - No deck hierarchy - flat organization with categories
-- Cleaner review interface
+- Words are imported, then you generate flashcards as needed
+- Multiple flashcard types available per word:
+  - Recognition (word → meaning)
+  - Production (meaning → word)
+  - Listening variations
+  - Cloze deletions
+  - Image-based cards
 - FSRS adapts to your memory patterns
 - iCloud sync automatic (no AnkiWeb needed)
 
@@ -96,6 +102,7 @@ Step-by-step guide based on the actual iOS implementation. Address real concerns
 - Confirmed media support and duplicate detection
 - Added CSV and plain text import options
 - Verified with test files in repo (sample_thai.apkg)
+- **Correction:** Language Den imports Anki notes as Words, then allows generating multiple flashcard types per word (not limited to single cards)
 
 ---
 
