@@ -45,13 +45,13 @@ Step-by-step guide based on the actual iOS implementation. Address real concerns
 - Success screen shows imported/skipped counts
 
 ### 4. What Transfers Over (Verified from Code)
-- ✅ All cards and notes
+- ✅ Words from your notes (one word per note)
 - ✅ Images and audio files
-- ✅ Custom fields (via mapping)
+- ✅ Custom fields (via mapping to metadata)
 - ✅ Tags → Categories conversion
-- ✅ Card relationships preserved
 - ✅ Duplicate detection (won't reimport existing words)
 - ⚠️ Review history (starts fresh with FSRS algorithm)
+- ⚠️ Complex card types (cloze, multiple cards per note) simplified to single flashcards
 
 ### 5. Additional Import Options
 - **CSV Import**: For spreadsheet users
