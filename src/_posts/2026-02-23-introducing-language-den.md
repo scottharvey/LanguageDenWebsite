@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing Language Den"
 date: 2026-02-23
-draft: true
+draft: false
 categories: ["announcements"]
 description: "Language Den is now available on the App Store. Build vocabulary with spaced repetition, AI-powered flashcard generation, Anki import, and iCloud sync."
 ---
