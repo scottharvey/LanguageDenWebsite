@@ -2,7 +2,7 @@
 layout: post
 title: "What Happens When You Tap 'Again' on a Flashcard"
 date: 2026-02-28
-draft: true
+draft: false
 categories: ["memory-science", "study-systems"]
 description: "Every time you rate a flashcard, an algorithm quietly updates your memory model. Here's exactly what happens under the hood when you tap Again, Hard, Good, or Easy."
 ---
