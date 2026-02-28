@@ -4,9 +4,9 @@ title: About
 description: "Language Den is built by a solo developer who lives and breathes language learning. Learn who's behind the app and why it exists."
 ---
 
-Language Den is a one-person project. No team. No investors. No growth hackers. Just one developer who got fed up with the existing options and decided to build something better.
-
 <img src="/images/scott-harvey.png" alt="Scott Harvey" style="width: 200px; border-radius: 12px; float: right; margin: 0 0 1.5rem 2rem;">
+
+Language Den is a one-person project. No team. No investors. No growth hackers. Just one developer who got fed up with the existing options and decided to build something better.
 
 ## Hi, I'm Scott
 
