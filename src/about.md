@@ -6,7 +6,7 @@ description: "Language Den is built by a solo developer who lives and breathes l
 
 Language Den is a one-person project. No team. No investors. No growth hackers. Just one developer who got fed up with the existing options and decided to build something better.
 
-<img src="/images/scott-harvey.png" alt="Scott Harvey" style="width: 160px; border-radius: 50%; margin: 2rem 0;">
+<img src="/images/scott-harvey.png" alt="Scott Harvey" style="width: 200px; border-radius: 12px; float: right; margin: 0 0 1.5rem 2rem;">
 
 ## Hi, I'm Scott
 
