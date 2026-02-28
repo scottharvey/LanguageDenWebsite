@@ -15,9 +15,9 @@ You don't need to use Anki to benefit from all that work. Language Den can impor
 
 The best place to start is [AnkiWeb](https://ankiweb.net/shared/decks), where thousands of decks are shared for free. You can search by language, topic, or skill level. Some highlights worth knowing about:
 
-- **Frequency decks** — the most common 2,000 words in a language, ranked by how often they appear in real speech
-- **Grammar-based decks** — vocabulary organised by structure (verbs, particles, classifiers, etc.)
-- **Immersion decks** — words pulled from popular TV shows, books, or films
+- **Frequency decks**: the most common 2,000 words in a language, ranked by how often they appear in real speech
+- **Grammar-based decks**: vocabulary organised by structure (verbs, particles, classifiers, etc.)
+- **Immersion decks**: words pulled from popular TV shows, books, or films
 
 If you've already been using Anki, you may have decks on your computer that you've collected or built yourself. Those work too.
 
@@ -25,13 +25,13 @@ If you've already been using Anki, you may have decks on your computer that you'
 
 The process takes less than a minute:
 
-1. **Download or export the deck** — on AnkiWeb, hit the download button to get an `.apkg` file. If you're exporting from the Anki desktop app, go to File > Export and choose Anki Deck Package.
+1. **Download or export the deck**: on AnkiWeb, hit the download button to get an `.apkg` file. If you're exporting from the Anki desktop app, go to File > Export and choose Anki Deck Package.
 
-2. **Send the file to your device** — AirDrop, iCloud Drive, email, or any file transfer method works.
+2. **Send the file to your device**: AirDrop, iCloud Drive, email, or any file transfer method works.
 
-3. **Open the file in Language Den** — tap the `.apkg` file and Language Den will open the importer automatically. It reads your deck and figures out which fields contain your words, translations, and audio.
+3. **Open the file in Language Den**: tap the `.apkg` file and Language Den will open the importer automatically. It reads your deck and figures out which fields contain your words, translations, and audio.
 
-4. **Confirm and import** — for most standard decks, everything is pre-mapped correctly. Hit import and you're done.
+4. **Confirm and import**: for most standard decks, everything is pre-mapped correctly. Hit import and you're done.
 
 ## What gets imported
 
