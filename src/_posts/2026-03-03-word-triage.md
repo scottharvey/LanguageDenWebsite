@@ -35,7 +35,7 @@ When words arrive in Language Den — whether through an Anki import, a CSV file
 
 That's the whole thing. One word at a time, a few seconds each. The words you generate or keep go into your deck. The rest are gone.
 
-![Your word list](/images/home.png)
+<img src="/images/home.png" alt="Your word list" class="phone-screenshot">
 
 ## Why this works
 

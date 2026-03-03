@@ -1741,3 +1741,11 @@ img.screenshot--dark { display: none; }
     text-align: left;
   }
 }
+
+/* Phone screenshot — constrain width so portrait screenshots don't stretch full-width */
+.phone-screenshot {
+  max-width: 320px;
+  margin: 1.5em auto;
+  display: block;
+  border-radius: 16px;
+}
