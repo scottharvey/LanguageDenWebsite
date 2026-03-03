@@ -28,7 +28,7 @@ The types cover the most common places people encounter new vocabulary:
 
 Within each Source, you can create sections. A book might have chapters. A TV series might have episodes or seasons. A podcast might have individual episodes worth separating out. Words live inside sections, which live inside Sources.
 
-![Sources overview](/images/sources.png)
+<img src="/images/sources.png" alt="Sources overview" class="phone-screenshot">
 
 ## Why this changes how vocabulary sticks
 
@@ -46,7 +46,7 @@ Say you're working through a Thai novel. You create a Source named after the boo
 
 The same works for shows and podcasts. Create the Source once, add sections as you go, and add words in the moment you encounter them — or later via Quick Notes if you don't want to break your flow.
 
-![Inside a source](/images/source.png)
+<img src="/images/source.png" alt="Inside a source" class="phone-screenshot">
 
 By the time you've finished a series or a book, you have a vocabulary set that maps directly to your experience of that content. Reviewing those words feels connected to something real, not abstract.
 
