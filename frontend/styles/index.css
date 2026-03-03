@@ -1746,6 +1746,13 @@ img.screenshot--dark { display: none; }
 .phone-screenshot {
   max-width: 320px;
   margin: 1.5em auto;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   border-radius: 16px;
+}
+
+.post-content .phone-screenshot {
+  margin-left: auto;
+  margin-right: auto;
 }
