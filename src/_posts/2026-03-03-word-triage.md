@@ -27,13 +27,13 @@ Language Den adds a step between importing words and studying them: triage.
 
 When words arrive in Language Den — whether through an Anki import, a CSV file, or a Quick Note you captured on the go — they go into a triage queue first. Before any flashcard is generated, before any review is scheduled, you see each word and make a simple decision.
 
-**Keep it** — this word is worth learning, generate a flashcard and add it to my deck.
+**Generate** — this word is worth learning; queue it for flashcard generation. After triage, Language Den batch-generates all the cards you've marked.
 
-**Skip it** — I know this already or I don't need it right now, remove it.
+**Keep** — add the word to your deck as-is, without generating a flashcard yet.
 
-**Suspend it** — not now, but maybe later, set it aside without deleting it.
+**Delete** — this word is irrelevant or already known, remove it entirely.
 
-That's the whole thing. One word at a time, a few seconds each. The words you keep become cards. The rest don't.
+That's the whole thing. One word at a time, a few seconds each. The words you generate or keep go into your deck. The rest are gone.
 
 ![Your word list](/images/home.png)
 
@@ -47,16 +47,16 @@ There's also a psychological benefit. A deck you've triaged feels like yours. Yo
 
 ## Being ruthless is the right move
 
-The most common mistake in triage is being too generous. It feels wasteful to skip a word. What if you need it later?
+The most common mistake in triage is being too generous. It feels wasteful to delete a word. What if you need it later?
 
-The answer is: you can always add it later. A word you skip doesn't disappear — it stays in the app and can be reviewed or added back. What you can't easily undo is the fatigue of reviewing hundreds of cards you don't care about for months.
+The answer is: words that aren't ready yet can simply be kept without generating flashcards — or you can delete and re-add later. What you can't easily undo is the fatigue of reviewing hundreds of cards you don't care about for months.
 
 A few useful heuristics:
 
-- **Skip anything you already know.** Testing yourself on "bonjour" if you've spoken French for five years is just noise.
-- **Skip anything that's too advanced right now.** A beginner deck shouldn't include literary vocabulary.
-- **Skip anything irrelevant to how you'll use the language.** Learning Thai for travel? Legal vocabulary can wait.
-- **Keep phrases and idioms.** These are often the most underrated additions to a deck.
+- **Delete anything you already know.** Testing yourself on "bonjour" if you've spoken French for five years is just noise.
+- **Delete anything that's too advanced right now.** A beginner deck shouldn't include literary vocabulary.
+- **Delete anything irrelevant to how you'll use the language.** Learning Thai for travel? Legal vocabulary can wait.
+- **Generate phrases and idioms.** These are often the most underrated additions to a deck.
 
 ## The triage workflow in practice
 
