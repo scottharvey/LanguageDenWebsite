@@ -21,7 +21,7 @@ When you add a word to Language Den, you don't have to build the flashcard yours
 
 The app passes the word to an AI model, which generates the card content: a definition, an example sentence showing the word used in context, and a formatted card ready to review. For nouns, it can also search for an image to attach. The result is a proper, well-constructed flashcard — the kind that would take you a few minutes to make by hand — appearing in a few seconds.
 
-![A generated flashcard](/images/flashcard.png)
+<img src="/images/flashcard.png" alt="A generated flashcard" class="phone-screenshot">
 
 This changes the economics of adding new vocabulary. The barrier to adding a word goes from "sit down, find a definition, write an example sentence, format the card" to "type the word, tap generate." You can add vocabulary in the moment you encounter it, rather than batching it into a dedicated study session that may or may not happen.
 
@@ -37,7 +37,7 @@ Every time you review a card and rate it — Again, Hard, Good, or Easy — FSRS
 
 The practical outcome is that your daily review load stays proportional to what you actually need, not to the size of your deck. You can read more about exactly how FSRS works [in this post](/blog/fsrs-modern-spaced-repetition).
 
-![Review ratings](/images/review-card-ratings.png)
+<img src="/images/review-card-ratings.png" alt="Review ratings" class="phone-screenshot">
 
 ## Why the combination matters
 
