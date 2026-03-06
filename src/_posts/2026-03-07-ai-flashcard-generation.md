@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI Builds Your Flashcards. FSRS Schedules Them. You Just Show Up."
-date: 2026-03-03
+date: 2026-03-07
 draft: false
 categories: ["features", "technology"]
 description: "Language Den combines AI-powered flashcard generation with FSRS scheduling. Here's why that combination matters — and why it's different from using either tool on its own."
