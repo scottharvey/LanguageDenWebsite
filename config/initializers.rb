@@ -31,6 +31,9 @@ Bridgetown.configure do |config|
   #
   # timezone "America/Los_Angeles"
 
+  # Publish posts dated today or earlier (including future dates relative to UTC)
+  config.future = true
+
   # Add collection pagination features to your site. Documentation here:
   # https://www.bridgetownrb.com/docs/content/pagination
   #
